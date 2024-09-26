@@ -1,5 +1,5 @@
 import React from 'react'
-import Themenseite1 from '../pages/Themenseite1'
+// import Themenseite1 from '../pages/Themenseite1'
 
 function Main() {
   return (
@@ -7,7 +7,6 @@ function Main() {
         <h1 className="text-3xl font-bold underline">
             Hello Main!
         </h1>
-        <Themenseite1></Themenseite1>
     </div>
   )
 }
