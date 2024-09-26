@@ -20,15 +20,15 @@ function Navbar() {
           {/* small */}
           <div class="flex flex-row absolute justify-between items-center t-0 w-screen nav-bg-color py-4 px-6">
           <Link to="/">
-            <img class="ml-6 py-2" src={Firmenlogo}></img>
+            <img class="ml-4 py-2" src={Firmenlogo}></img>
           </Link>
-          <img class="mr-6" src={Hamburger}></img>
+          <img class="" src={Hamburger}></img>
         </div>
   
           {/* medium */}
           <div class="hidden md:flex flex-row absolute justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
             <Link class="flex flex-row items-start" to="/">
-              <img class="ml-6 py-2" src={Firmenlogo}></img>
+            <img class="ml-4 py-2"  src={Firmenlogo}></img>
             </Link>
             <div class="flex flex-row items-center justify-end">
               <button class="nav-button-color nav-button-text-color mr-6 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
@@ -39,7 +39,7 @@ function Navbar() {
           {/* large */}
           <div class="hidden lg:flex flex-row absolute justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
             <Link class="flex flex-row items-start" to="/">
-              <img class="ml-6 py-2" src={Firmenlogo}></img>
+              <img class="ml-4 py-2" src={Firmenlogo}></img>
             </Link>
             <div class="flex flex-row items-center justify-end mx-2">
               <div class="flex flex-row items-center justify-end mx-2">
@@ -56,7 +56,7 @@ function Navbar() {
           <div class="hidden xl:flex flex-row absolute justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
           <div class="flex flex-row justify-start items-center">
             <Link class="flex flex-row items-start" to="/">
-              <img class="ml-6 py-2" src={Firmenlogo}></img>
+              <img class="ml-4 py-2" src={Firmenlogo}></img>
             </Link>
   
             <div class="flex flex-row justify-start items-center mx-4">
@@ -71,7 +71,7 @@ function Navbar() {
                 <div class="flex flex-row items-center justify-between nav-bg-color">
                     <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick="" to="/Themenseite1">Leistungen</Link>
                     <div class="px-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="h-6 w-6 hover:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                       </svg>
                     </div>
@@ -114,13 +114,13 @@ function Navbar() {
               <div class="group relative cursor-pointer">
   
               <div class="flex flex-row items-center justify-between nav-bg-color">
-                  <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color lg:mx-4" onClick="" to="/Themenseite2">Leistungen</Link>
-                  <span class="px-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-                  </span>
-                </div>
+                    <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick="" to="/Themenseite1">Energiekonzepte</Link>
+                    <div class="px-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                    </div>
+                  </div>
   
                 {/*  Overlay menu */}
                 <div class="flex flex-row py-6 invisible absolute w-screen nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
@@ -153,6 +153,12 @@ function Navbar() {
   
                 </div>
               </div>
+
+              <Link class="flex flex-row items-start" to="/offene-stellen">
+                <div class="menu-hover my-2 py-2 text-base font-medium nav-text-color mx-2 p-2">Jobs</div>
+              </Link>
+
+
             </div>
   
           </div>

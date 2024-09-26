@@ -1,11 +1,31 @@
 import React from 'react'
 
+// --- Image resources ---
+
+//  PNGs
+import Hero_about from '/src/assets/images/hero-about.png'
+
+
 function Themenseite1() {
   return (
-    <div class="w-full flex flex-col justify-center items-center h-screen bg-yellow-200">
-        <h1 className="text-3xl font-bold underline">
+    <div class="flex flex-col justify-center items-center w-full bg-white">
+
+
+        <h1 className="bg-green-400 text-3xl font-bold underline">
             Themenseite 1
         </h1>
+        <div class="flex flex-row justify-between items-center hero-bg-light-pink w-full pt-10">
+          <div class="flex flex-col justify-center items-center">
+            <span>Über uns Unternehmen – Paul SHK</span>
+            <span>Bei Paul SHK Köln stehen Menschen und ihre Fähigkeiten im Mittelpunkt unseres Erfolgs.</span>
+          </div>
+          <img src={Hero_about}></img>
+        </div>
+        <div class="bg-indigo-400 w-full h-10">Test3
+        </div>
+        <div class="bg-slate-400 w-full h-40">Test1
+        </div>
+
     </div>
   )
 }
