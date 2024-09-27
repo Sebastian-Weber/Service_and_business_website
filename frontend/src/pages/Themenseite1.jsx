@@ -6,11 +6,13 @@ import React from 'react'
 import Hero_about from '/src/assets/images/hero-about.png'
 
 
+
+
+
 function Themenseite1() {
   return (
-    <div class="flex flex-col justify-center items-center w-full bg-white">
-
-
+    <>
+      <div class="flex flex-col justify-center items-center w-full bg-white">
         <h1 className="bg-green-400 text-3xl font-bold underline">
             Themenseite 1
         </h1>
@@ -21,12 +23,10 @@ function Themenseite1() {
           </div>
           <img src={Hero_about}></img>
         </div>
-        <div class="bg-indigo-400 w-full h-10">Test3
-        </div>
-        <div class="bg-slate-400 w-full h-40">Test1
-        </div>
-
-    </div>
+        <div class="bg-indigo-400 w-full h-10">Test3</div>
+        <div class="bg-slate-400 w-full h-40">Test1</div>
+      </div>
+    </>
   )
 }
 

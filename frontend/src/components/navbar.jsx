@@ -28,7 +28,7 @@ function Navbar() {
           {/* medium */}
           <div class="hidden md:flex flex-row absolute justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
             <Link class="flex flex-row items-start" to="/">
-            <img class="ml-4 py-2"  src={Firmenlogo}></img>
+            <img class="ml-4 py-2" src={Firmenlogo}></img>
             </Link>
             <div class="flex flex-row items-center justify-end">
               <button class="nav-button-color nav-button-text-color mr-6 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
@@ -61,7 +61,7 @@ function Navbar() {
   
             <div class="flex flex-row justify-start items-center mx-4">
   
-              <Link class="flex flex-row items-start" to="/about">
+              <Link class="flex flex-row items-start" to="/ueber-uns">
                 <div class="menu-hover my-2 py-2 text-base font-medium nav-text-color mx-2 p-2">Über uns</div>
               </Link>
   
