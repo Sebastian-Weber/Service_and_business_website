@@ -9,6 +9,7 @@ import './index.css';
 import Ueber_uns from './pages/ueber_uns';
 import Jobs from './pages/jobs';
 import Home from './pages/home';
+import Elektroinstallation from './pages/elektroinstallation';
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: '/offene-stellen',
                 element: <Jobs />,
+            },
+            {
+                path: '/elektroinstallation',
+                element: <Elektroinstallation />,
             },
         ]
     }

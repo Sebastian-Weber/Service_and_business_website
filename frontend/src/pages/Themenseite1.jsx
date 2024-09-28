@@ -4,7 +4,7 @@ import React from 'react'
 
 //  PNGs
 import Hero_about from '/src/assets/images/hero-about.png'
-
+import HandwerkerPaul from '/src/assets/images/Handwerker_Paul.png'
 
 
 
@@ -21,7 +21,7 @@ function Themenseite1() {
             <span>Über uns Unternehmen – Paul SHK</span>
             <span>Bei Paul SHK Köln stehen Menschen und ihre Fähigkeiten im Mittelpunkt unseres Erfolgs.</span>
           </div>
-          <img src={Hero_about}></img>
+          <img class="" src={HandwerkerPaul}></img>
         </div>
         <div class="bg-indigo-400 w-full h-10">Test3</div>
         <div class="bg-slate-400 w-full h-40">Test1</div>

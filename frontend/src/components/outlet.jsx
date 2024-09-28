@@ -10,7 +10,7 @@ import Home from '../pages/home'
 function Outlet() {
   return (
     <>
-    <div class="w-full flex flex-col justify-center items-center h-screen bg-red-200">
+    <div class="relative w-full flex flex-col justify-center items-center h-screen bg-red-200">
       <h1 className="text-3xl font-bold underline">
         Hello Outlet!
       </h1>
