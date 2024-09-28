@@ -211,7 +211,7 @@ function Navbar() {
                         <div>TEST</div>
                       </Link>
                       <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                      Komplettsanierungen
+                      Komplettsanierung
                       </Link>
                       <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                       Schlüsselfertige Komplettsanierung aus einer Hand
