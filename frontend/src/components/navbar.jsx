@@ -31,71 +31,103 @@ import Bathroom from '/src/assets/images/Bathroom.jpg'
 
 function Navbar() {
   const [isOverlayVisible, setOverlayVisible] = useState(false);
-
   const toggleOverlay = () => {
     setOverlayVisible(!isOverlayVisible);
   };
-
   const closeOverlay = () => {
     setOverlayVisible(false);
   };
 
+  const [isHamburgerExpanderVisible, setHamburgerExpanderVisible] = useState(false);
+  const toggleHamburgerExpander = () => {
+    setHamburgerExpanderVisible(!isHamburgerExpanderVisible);
+  };
+
+
+  const [isLeistungenExpanderVisible, setLeistungenExpanderVisible] = useState(false);
+  const toggleLeistungenExpander = () => {
+    setLeistungenExpanderVisible(!isLeistungenExpanderVisible);
+  };
+
+
+  const [isEnergiekonzepteExpanderVisible, setEnergiekonzepteExpanderVisible] = useState(false);
+  const toggleEnergiekonzepteExpander = () => {
+    setEnergiekonzepteExpanderVisible(!isEnergiekonzepteExpanderVisible);
+  };
+
   return (
     <>
-          {/* small */}
-          <div class="flex flex-row absolute justify-between items-center t-0 w-screen nav-bg-color py-4 px-6">
-            <Link to="/">
-              <img class="ml-4 py-2" src={Firmenlogo}></img>
-            </Link>
+      {/* small */}
+      <div className="flex flex-row absolute justify-between items-center t-0 w-screen nav-bg-color py-4 px-6">
+        <Link to="/" onClick={closeOverlay}>
+          <img className="ml-4 py-2" src={Firmenlogo} alt="Firmenlogo" />
+        </Link>
 
+        {/* Hamburger Menu Dropdown */}
+        <div className="relative group cursor-pointer">
+          <div className="relative flex flex-row items-center justify-between nav-bg-color my-2">
+            <img className="mr-6 cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
+          </div>
 
-                {/* /Leistungen Dropdown */}
-                <div class="relative group cursor-pointer">
-    
-                  <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
-                  <img class="mr-6" src={Hamburger}></img>
-                  </div>
-  
-                {/*  Overlay menu */}
-                <div class="-left-60 py-6 px-6  invisible  absolute w-screen nav-bg-color items-center justify-start group-hover:visible">
-
-                    <div class="flex flex-col -mt-10 justify-normal items-start">
-                      <ul class="nav-text-color mt-12  ">
-                        <li>Über uns</li>
-                        <li>Leistungen
-                          
-                          {/* /Leistungen Dropdown */}
-                          <div class="relative group cursor-pointer">
-              
-                            <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
-                              <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick="" to="/Themenseite1">Leistungen</Link>
-                              <div class="px-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
-                                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>
-                              </div>
-                            </div>
-  
-                            {/*  Overlay menu */}
-                            <div class=" invisible absolute w-screen nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
-                            
-
-                            </div>
+          {/* Overlay menu */}
+          <div className={`py-6 px-6 fixed top-24 left-0 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
+            <div className="flex flex-col justify-normal items-start">
+              <ul className="w-full nav-text-color mt-12">
+                <li>Über uns</li>
+                <li>
+                      {/* Leistungen Expander */}
+                      <div class="flex flex-row menu-hover cursor-pointer" onClick={toggleLeistungenExpander}>
+                        <div class="">Leistungen</div>
+                        <div class="ml-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                          </svg>
+                        </div>
                           </div>
+                        <div className={`relative ${isLeistungenExpanderVisible ? 'block' : 'hidden'}`}>
+                          <div className="flex flex-col mt-2  shadow-lg rounded-lg">
+                            <ul>
+                              <li className="py-2 px-4">Badsanierung</li>
+                              <li className="py-2 px-4">Elektroinstallationen</li>
+                              <li className="py-2 px-4">Heizungsinstallation und -Sanierung</li>
+                              <li className="py-2 px-4">Klimaanlagen</li>
+                              <li className="py-2 px-4">Komplettsanierungen</li>
+                            </ul>
+                          </div>
+                      </div>
+                    </li>
 
-                        </li>
+                    <li>
+                      {/* Energiekonzepte Expander */}
+                      <div class="flex flex-row menu-hover cursor-pointer" onClick={toggleEnergiekonzepteExpander}>
+                        <div class="">Energiekonzepte</div>
+                        <div class="ml-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                          </svg>
+                        </div>
+                          </div>
+                        <div className={`relative ${isEnergiekonzepteExpanderVisible ? 'block' : 'hidden'}`}>
+                          <div className="flex flex-col mt-2 shadow-lg rounded-lg">
+                            <ul>
+                              <li className="py-2 px-4">Photovoltaik-Anlagen</li>
+                              <li className="py-2 px-4">Solarthermie-Anlagen</li>
+                              <li className="py-2 px-4">Wallboxen</li>
+                              <li className="py-2 px-4">Wärmepumpen</li>
+                            </ul>
+                          </div>
+                      </div>
+                    </li>
 
-
-                        <li>Energiekonzepte</li>
-                        <li>Jobs</li>                          
-                      </ul>
-                    </div>  
-
-                  </div>
-                </div>
+                    <li>Jobs</li>
+                </ul>
+              </div>
+            </div>
 
           </div>
-  
+
+        </div>
+
           {/* medium */}
           <div class="hidden md:flex flex-row absolute justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
             <Link class="flex flex-row items-start" to="/">
@@ -133,14 +165,15 @@ function Navbar() {
               <div class="flex flex-row justify-start items-center mx-4">
   
                 <Link class="flex flex-row items-start" to="/ueber-uns">
-                  <div class="menu-hover my-2 py-2 text-base font-medium nav-text-color mx-2 p-2">Über uns</div>
+                  <div class="menu-hover my-2 py-2 nav-text-color mx-2 p-2" onClick={closeOverlay}>Über uns</div>
                 </Link>
   
                 {/* /Leistungen Dropdown */}
                 <div class="relative group cursor-pointer">
     
                   <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
-                    <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick="" to="/Themenseite1">Leistungen</Link>
+                    <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick={closeOverlay} to="/Themenseite1">Leistungen
+                    </Link>
                     <div class="px-2">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -211,7 +244,7 @@ function Navbar() {
                         <div>TEST</div>
                       </Link>
                       <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                      Komplettsanierungen
+                      Komplettsanierung
                       </Link>
                       <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                       Schlüsselfertige Komplettsanierung aus einer Hand
@@ -223,12 +256,13 @@ function Navbar() {
   
               </div>
   
-              {/* /Energiekonzepte Dropdown */}
+              {/* /Energiekonzepte  */}
               <div class="relative group cursor-pointer">
   
-                <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
-                      <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick={toggleOverlay} to="/Themenseite1">Energiekonzpte</Link>
-                      <div class="px-2">
+              <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
+                    <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick={closeOverlay} to="/Themenseite2">Energiekonzepte
+                    </Link>
+                    <div class="px-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
@@ -236,11 +270,11 @@ function Navbar() {
                     </div>
   
                 {/*  Overlay menu */}
-                <div class=" -left-96 py-6 mx-12 px-12 invisible absolute w-screen nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
+                <div class="left-0 py-6 px-6 invisible fixed w-full nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
                 
                   <div class="flex flex-row justify-start items-start">
 
-                    <div class="flex flex-col justify-normal items-start px-10">
+                    <div class="flex flex-col justify-normal items-start">
                       <Link to="/Themenseite2" onClick={closeOverlay}>
                         <div>
                         <img class="w-64 h-auto" src={Kitchen}></img>
