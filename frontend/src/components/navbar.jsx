@@ -69,12 +69,16 @@ function Navbar() {
             <img className="mr-6 cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
           </div>
 
-          {/* Overlay menu */}
-          <div className={`py-6 px-6 fixed top-24 left-0 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
-            <div className="flex flex-col justify-normal items-start">
-              <ul className="w-full nav-text-color mt-12">
-                <li>Über uns</li>
-                <li>
+              {/* Overlay menu */}
+              <div className={`py-6 px-6 fixed top-24 left-0 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
+                <div className="flex flex-col justify-normal items-start">
+                  <ul className="w-full nav-text-color mt-12">
+
+                    <li class="">
+                      <Link onClick={toggleOverlay} to="/ueber-uns">Über uns</Link>
+                    </li>
+
+                    <li>
                       {/* Leistungen Expander */}
                       <div class="flex flex-row menu-hover cursor-pointer" onClick={toggleLeistungenExpander}>
                         <div class="">Leistungen</div>
@@ -120,13 +124,12 @@ function Navbar() {
                     </li>
 
                     <li>Jobs</li>
-                </ul>
+
+                  </ul>
+                </div>
               </div>
             </div>
-
           </div>
-
-        </div>
 
           {/* medium */}
           <div class="hidden md:flex flex-row absolute justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
@@ -158,31 +161,37 @@ function Navbar() {
           {/* xl */}
           <div class="absolute hidden xl:flex flex-row justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
             <div class="flex flex-row justify-start items-center">
-              <Link class="flex flex-row items-start" to="/">
+              <Link class="flex flex-row items-start" to="/" onClick={closeOverlay}>
                 <img class="ml-4 py-2" src={Firmenlogo}></img>
               </Link>
     
               <div class="flex flex-row justify-start items-center mx-4">
-  
-                <Link class="flex flex-row items-start" to="/ueber-uns">
-                  <div class="menu-hover my-2 py-2 nav-text-color mx-2 p-2" onClick={closeOverlay}>Über uns</div>
+
+                {/* Ueber uns  */}
+                <Link class="" to="/ueber-uns">
+                  <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color mx-2 p-2" onClick={closeOverlay}>
+                    Über uns
+                  </div>
                 </Link>
   
-                {/* /Leistungen Dropdown */}
+                {/* Leistungen */}
                 <div class="relative group cursor-pointer">
-    
-                  <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
-                    <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick={closeOverlay} to="/Themenseite1">Leistungen
-                    </Link>
-                    <div class="px-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </div>
+  
+                <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
+                  <Link to="/Themenseite1">
+                  <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color">
+                    Leistungen
                   </div>
+                  </Link>
+                    <div class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                      </div>
+                    </div>
   
                 {/*  Overlay menu */}
-                <div class=" -left-56 py-6 px-12 invisible absolute w-screen nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
+                <div class="left-0 py-6 px-4 invisible fixed w-full nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
                 
                   <div class="flex flex-row justify-start items-start">
 
@@ -257,11 +266,14 @@ function Navbar() {
               </div>
   
               {/* /Energiekonzepte  */}
-              <div class="relative group cursor-pointer">
+              <div class="relative group cursor-pointer" onClick={closeOverlay}>
   
-              <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
-                    <Link class="menu-hover my-2 py-2 text-base font-medium nav-text-color" onClick={closeOverlay} to="/Themenseite2">Energiekonzepte
-                    </Link>
+                <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
+                  <Link to="/Themenseite2">
+                  <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color" onClick={closeOverlay}>
+                    Energiekonzepte
+                  </div>
+                  </Link>
                     <div class="px-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -346,7 +358,7 @@ function Navbar() {
               </div>
 
               <Link class="flex flex-row items-start" to="/offene-stellen">
-                <div class="menu-hover my-2 py-2 text-base font-medium nav-text-color mx-2 p-2">Jobs</div>
+                <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color mx-2 p-2">Jobs</div>
               </Link>
 
 
@@ -355,9 +367,9 @@ function Navbar() {
           </div>
   
           <div class="flex flex-row items-center justify-end">
-            <div class="flex flex-row items-center justify-end mx-2">
-              <img class="mx-1" src={Phone}></img>
-              <span class="mx-1 nav-text-color">+ 121344355</span>
+            <div class="flex flex-row items-center justify-end ">
+              <img class="" src={Phone}></img>
+              <span class="text-xl mr-4 nav-text-color">+49 12345 6789</span>
             </div>
               <button class="nav-button-color nav-button-text-color mr-6 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
             </div>
