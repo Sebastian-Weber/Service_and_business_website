@@ -12,6 +12,7 @@ import Home from './pages/home';
 import Elektroinstallation from './pages/elektroinstallation';
 
 
+
 const router = createBrowserRouter([
     {
         path: '/',
