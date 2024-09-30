@@ -11,7 +11,7 @@ function Herosection() {
   return (
     <>
         <div class="flex flex-row justify-center my-28">Herosection</div> 
-        <div class="flex flex-row justify-around items-center w-full my-28">
+        <div class="flex flex-col justify-around items-center w-full my-28 md:flex-row">
 
             {/* Left box - text + image*/}
             <div class="flex flex-col justify-center items-center">

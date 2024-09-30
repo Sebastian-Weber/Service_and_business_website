@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link, Route, Routes } from "react-router-dom";
 
 // --- Component resources ---
-import Navbar123 from './navbar_xl_dropdown';
+
 
 // --- Image resources ---
 
@@ -26,7 +26,12 @@ import Elektroinstallation4 from '/src/assets/images/Elektroinstallation4.jpg'
 import Kitchen from '/src/assets/images/Kitchen.jpg'
 import Bathroom from '/src/assets/images/Bathroom.jpg'
 import FixingLeakyFaucets from '/src/assets/images/Fixing_leaky_faucets.jpg'
-import Navbar_xl_dropdown from './navbar_xl_dropdown';
+import Navbar_xl_dropdown_outdoor from './navbar_xl_dropdown_outdoor';
+import Navbar_xl_dropdown_indoor from './navbar_xl_dropdown_indoor';
+import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
+
+
+
 
 
 
@@ -320,192 +325,11 @@ function Navbar() {
                     Über uns
                   </div>
                 </Link>
-  
-                {/* Indoor services Dropdown */}
-                <div class="relative group cursor-pointer">
-  
-                <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
-                  <Link to="/Themenseite1">
-                  <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color">
-                  Indoor Services
-                  </div>
-                  </Link>
-                    <div class="px-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </div>
-                    </div>
-  
-                {/*  Overlay menu */}
-                <div class="left-0 py-6 px-4 invisible fixed w-full nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
-                
-                  <div class="flex flex-row justify-start items-start">
 
-                    <div class="flex flex-col justify-normal items-start px-10">
-                      <Link to="/">
-                        <img class="w-64 h-auto" src={Bathroom}></img>
-                        <div>TEST</div>
-                      </Link>
-                      <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                      Badsanierung
-                      </Link>
-                      <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                      Einbau, Austausch und Reparatur
-                      </Link>
-                    </div>  
-    
-                    <div class="flex flex-col justify-normal items-start px-10 ">
-                      <Link to="/">
-                        <img class="w-64 h-auto" src={Badsanierung}></img>
-                        <div>TEST</div>
-                      </Link>
-                      <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                      Elektroinstallation
-                      </Link>
-                      <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                      Spannung da wo du sie brauchst
-                      </Link>
-                    </div>
+            <Navbar_xl_dropdown_indoor></Navbar_xl_dropdown_indoor>
+            <Navbar_xl_dropdown_outdoor></Navbar_xl_dropdown_outdoor>
+            <Navbar_xl_dropdown_template></Navbar_xl_dropdown_template>
 
-                    <div class="flex flex-col justify-normal items-start px-10 ">
-                      <Link to="/">
-                        <img class="w-64 h-auto" src={FixingLeakyFaucets}></img>
-                      </Link>
-                      <br></br>
-                      <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                        Fixing leaky faucets
-                      </Link>
-                      <br></br>
-                      <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                        Stop the Drip – Let’s Get Your Faucets Flowing Right
-                      </Link>
-                    </div>
-
-                    <div class="flex flex-col justify-normal items-start px-10 ">
-                      <Link to="/">
-                        <img class="w-64 h-auto" src={Badsanierung3}></img>
-                        <div>TEST</div>
-                      </Link>
-                      <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                      Installing kitchen appliances
-                      </Link>
-                      <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                      Repairing small household appliances
-                      </Link>
-                    </div>
-
-                    <div class="flex flex-col justify-normal items-start px-10 ">
-                      <Link to="/">
-                        <img class="w-64 h-auto" src={Badsanierung3}></img>
-                        <div>TEST</div>
-                      </Link>
-                      <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                      Komplettsanierung
-                      </Link>
-                      <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                      Schlüsselfertige Komplettsanierung aus einer Hand
-                      </Link>
-                    </div>
-
-                  </div>
-                </div>
-  
-              </div>
-  
-              {/* Outdoor services Dropdown */}
-              <div class="relative group cursor-pointer" onClick={closeOverlay}>
-  
-                <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
-                  <Link to="/Themenseite2">
-                  <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color" onClick={closeOverlay}>
-                  Outdoor Services
-                  </div>
-                  </Link>
-                    <div class="px-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" class="h-6 w-6 scale-75 mt-1 -ml-2 hover:rotate-180">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </div>
-                    </div>
-  
-                {/*  Overlay menu */}
-                <div class="left-0 py-6 px-6 invisible fixed w-full nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
-                
-                  <div class="flex flex-row justify-start items-start">
-
-                    <div class="flex flex-col justify-normal items-start">
-                      <Link to="/Themenseite2" onClick={closeOverlay}>
-                        <div>
-                        <img class="w-64 h-auto" src={Kitchen}></img>
-                        <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                        Badsanierung
-                        </div>
-                        <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                        Einbau, Austausch und Reparatur
-                        </div>
-                        </div>
-                      </Link>
-                    </div>  
-    
-                    <div class="flex flex-col justify-normal items-start px-10 ">
-                      <Link to="/elektroinstallation">
-                        <img class="w-64 h-auto" src={Elektroinstallation}></img>
-                        <div>TEST</div>
-                        <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                        Elektroinstallation
-                        </div>
-                        <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                        Spannung wo du sie brauchst
-                        </div>
-                       </Link> 
-                    </div>
-
-                    <div class="flex flex-col justify-normal items-start px-10 ">
-                      <Link to="/">
-                        <img class="w-64 h-auto" src={Elektroinstallation2}></img>
-                        <div>TEST</div>
-                      </Link>
-                      <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                      Heizungsinstallation und -Sanierung
-                      </Link>
-                      <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                      Effizienz und Komfort
-                      </Link>
-                    </div>
-
-                    <div class="flex flex-col justify-normal items-start px-10 ">
-                      <Link to="/">
-                        <img class="w-64 h-auto" src={Elektroinstallation3}></img>
-                        <div>TEST</div>
-                      </Link>
-                      <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                        Installing kitchen appliances{}
-                      </Link>
-                      <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                      Expertise in Klimakonzepten
-                      </Link>
-                    </div>
-
-                    <div class="flex flex-col justify-normal items-start px-10 ">
-                      <Link to="/">
-                        <img class="w-64 h-auto" src={Elektroinstallation4}></img>
-                        <div>TEST</div>
-                      </Link>
-                      <Link class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                      Komplettsanierungen
-                      </Link>
-                      <Link class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                      Schlüsselfertige Komplettsanierung aus einer Hand
-                      </Link>
-                    </div>
-
-                  </div>
-                </div>
-                
-              </div>
-
-              <Navbar_xl_dropdown/>
 
               <Link class="flex flex-row items-start" to="/offene-stellen">
                 <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color ">Jobs</div>
