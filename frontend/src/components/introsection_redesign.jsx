@@ -4,11 +4,10 @@ import React from 'react'
 
 
 
-function Introsection() {
+function Introsection_redesign() {
   return (
     <>
-      <div class="flex flex-row justify-center items-center -mt-28 absolute z-30 bg-white">
-        <div class="flex flex-row justify-center items-center w-full bg-blue-200">Introsection</div> 
+      <div class="flex flex-row justify-center my-28">Introsection</div> 
         <div class="flex flex-row justify-around items-center w-full my-28">
         <div class="flex flex-col text-xl justify-center items-center bg-white text-gray-900">
           <span class="font-fredoka text-xl font-medium uppercase">Paul – Ready to get hands-on!</span>
@@ -37,11 +36,10 @@ function Introsection() {
             <span>We know how to bring your desires to life and we take pride in tailoring every detail to your unique needs, ensuring the perfect fit. Paul is your go-to craftsman for bathroom, heating renovations, air conditioning installations and electrical services. Whether it's creating the ideal atmosphere in your home or turning up the heat just right, we're there to make it happen. </span>
             <button class="nav-button-color nav-button-text-color">Mehr über uns erfahren</button>
         </div>
-      </div>
-      </div> 
+        </div>
 
     </>
   )
 }
 
-export default Introsection
+export default Introsection_redesign

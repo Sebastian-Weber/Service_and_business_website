@@ -68,7 +68,7 @@ const Navbar_XL_dropdown_items = [
     item_4_heading: '4 Kitchen countertop cutting & installment',
     item_4_subheading: '4 Precision Cuts That Wow',
     },
-    // Item 4
+    // Item 5
     {
     item_5_image: Kitchen_countertop_installment,
     item_5_heading: '5 Kitchen countertop cutting & installment',

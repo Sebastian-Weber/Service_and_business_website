@@ -9,6 +9,7 @@ import { Link, Route, Routes } from "react-router-dom";
 
 // SVGs
 import Firmenlogo from '/src/assets/Firmenlogo.svg'
+import Firmenlogo2 from '/src/assets/Firmenlogo2.svg'
 import Hamburger from '/src/assets/Hamburger.svg'
 import Phone from '/src/assets/Phone.svg'
 
@@ -29,6 +30,8 @@ import FixingLeakyFaucets from '/src/assets/images/Fixing_leaky_faucets.jpg'
 import Navbar_xl_dropdown_outdoor from './navbar_xl_dropdown_outdoor';
 import Navbar_xl_dropdown_indoor from './navbar_xl_dropdown_indoor';
 import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
+import Navbar_xl_dropdown_leistungen from './navbar_xl_dropdown_leistungen.jsx';
+import Navbar_xl_dropdown_energiekonzepte from './navbar_xl_dropdown_energiekonzepte.jsx';
 
 
 
@@ -326,9 +329,11 @@ function Navbar() {
                   </div>
                 </Link>
 
-            <Navbar_xl_dropdown_indoor></Navbar_xl_dropdown_indoor>
+            {/* <Navbar_xl_dropdown_indoor></Navbar_xl_dropdown_indoor>
             <Navbar_xl_dropdown_outdoor></Navbar_xl_dropdown_outdoor>
-            <Navbar_xl_dropdown_template></Navbar_xl_dropdown_template>
+            <Navbar_xl_dropdown_template></Navbar_xl_dropdown_template> */}
+            <Navbar_xl_dropdown_leistungen></Navbar_xl_dropdown_leistungen>
+            <Navbar_xl_dropdown_energiekonzepte></Navbar_xl_dropdown_energiekonzepte>
 
 
               <Link class="flex flex-row items-start" to="/offene-stellen">

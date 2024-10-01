@@ -4,16 +4,15 @@ import Herosection from '../components/herosection'
 import Footer from '../components/footer'
 import ResponsiveCardsTemplate from '../components/responsiveCardsTemplate'
 import Banner from '../components/banner'
-import Header from '../components/header'
-import Section_cards from '../components/Section_cards'
+import Herosection_redesign from '../components/herosection_redesign'
+import Introsection_redesign from '../components/introsection_redesign'
 
-function Home() {
+function Home_redesign() {
   return (
     <>
-    <div class="hero-bg-light-olive h-full">Home
-        <Herosection></Herosection>
-        <Introsection></Introsection>
-        <Section_cards></Section_cards>
+    <div class="hero-bg-light-olive h-screen">Home
+        <Herosection_redesign></Herosection_redesign>
+        <Introsection_redesign></Introsection_redesign>
         <Banner></Banner>
         <Footer></Footer>
         {/* <ResponsiveCardsTemplate/> */}
@@ -22,4 +21,4 @@ function Home() {
       )
 }
 
-export default Home
+export default Home_redesign

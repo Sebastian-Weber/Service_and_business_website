@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Link, Route, Routes } from "react-router-dom";
 
 // image resources
-import Navbar_XL_dropdown_item_1_image from '/src/assets/images/Placeholder.png'
-import Navbar_XL_dropdown_item_2_image from '/src/assets/images/Placeholder.png'
-import Navbar_XL_dropdown_item_3_image from '/src/assets/images/Placeholder.png'
-import Navbar_XL_dropdown_item_4_image from '/src/assets/images/Placeholder.png'
-import Navbar_XL_dropdown_item_5_image from '/src/assets/images/Placeholder.png'
+import Navbar_XL_dropdown_item_1_image from '/src/assets/images/original/lotus-design-n-print-g51F6-WYzyU-unsplash-scaled.jpg'
+import Navbar_XL_dropdown_item_2_image from '/src/assets/images/original/Copy-of-kevin_sauna-31-scaled.jpg'
+import Navbar_XL_dropdown_item_3_image from '/src/assets/images/original/Copy-of-kevin_wartung-18-scaled.jpg'
+import Navbar_XL_dropdown_item_4_image from '/src/assets/images/original/klimaanlage.png'
+import Navbar_XL_dropdown_item_5_image from '/src/assets/images/original/kevin_sauna-2-scaled.jpg'
 import Placeholder from '/src/assets/images/Placeholder.png'
 
 import Fixing_leaking_faucets from '/src/assets/images/Fixing_leaky_faucets.jpg'
@@ -46,38 +46,38 @@ import test5 from '/src/assets/images/Placeholder.png'
 const Navbar_XL_dropdown_items = [
     // Item 1
     {
-    item_1_image: Placeholder,
-    item_1_heading: '1 Placeholder',
-    item_1_subheading: '1 Placeholder',
+    item_1_image: Navbar_XL_dropdown_item_1_image,
+    item_1_heading: 'Badsanierung',
+    item_1_subheading: 'Einbau, Austausch und Reparatur',
     },
     // Item 2
     {
-    item_2_image: Placeholder,
-    item_2_heading: '2 Placeholder',
-    item_2_subheading: '2 VPlaceholder',
+    item_2_image: Navbar_XL_dropdown_item_2_image,
+    item_2_heading: 'Elektroinstallationen',
+    item_2_subheading: 'Lösungen für Zuhause und Unternehmen',
     },
     // Item 3
     {
-    item_3_image: Placeholder,
-    item_3_heading: '3 Placeholder',
-    item_3_subheading: '3 Placeholder',
+    item_3_image: Navbar_XL_dropdown_item_3_image,
+    item_3_heading: 'Heizungsinstallation und -Sanierung',
+    item_3_subheading: 'Effizienz und Komfort',
     },
     // Item 4
     {
-    item_4_image: Placeholder,
-    item_4_heading: '4 Placeholder',
-    item_4_subheading: '4 Placeholder',
+    item_4_image: Navbar_XL_dropdown_item_4_image,
+    item_4_heading: 'Klimaanlagen',
+    item_4_subheading: 'Expertise in Klimakonzepten',
     },
     // Item 5
     {
-    item_5_image: Placeholder,
-    item_5_heading: '5 Placeholder',
-    item_5_subheading: '5 Placeholder',
+    item_5_image: Navbar_XL_dropdown_item_5_image,
+    item_5_heading: 'Komplettsanierungen',
+    item_5_subheading: 'Schlüsselfertige Komplettsanierung aus einer Hand',
      },
   ];
 
 
-function Navbar_xl_dropdown_template() {
+function Navbar_xl_dropdown_leistungen() {
   return (
     <>
 
@@ -87,7 +87,7 @@ function Navbar_xl_dropdown_template() {
         <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
             <Link to="/Themenseite1">
                 <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color">
-                    Give me a name
+                    Leistungen
                 </div>
             </Link>
             <div class="px-2">
@@ -249,4 +249,4 @@ function Navbar_xl_dropdown_template() {
   )
 }
 
-export default Navbar_xl_dropdown_template
+export default Navbar_xl_dropdown_leistungen
