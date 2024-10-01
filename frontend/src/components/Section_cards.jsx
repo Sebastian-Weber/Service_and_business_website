@@ -6,12 +6,12 @@ function Section_cards() {
       <div>Section_Cards</div>
 
       <div>Responsive_Cards_Template</div>
-    <div className="min-h-svh relative z-40 bg-white pt-20 text-gray-200">
+    <div className="min-h-svh relative z-40 bg-white pt-20">
 
       {/* -- 1. Page title goes here --*/}
-      <div className="flex flex-row justify-center">
-        <div className="text-black bg-clip-text p-2 text-center font-cthulhumbus font-medium leading-tight text-transparent sm:text-3xl md:text-4xl">
-         Cards Section
+      <div className="flex flex-row justify-center  bg-gray-300 ">
+        <div className="bg-clip-text p-2 text-center font-medium leading-tight sm:text-3xl md:text-4xl">
+        Cards Section
         </div>
       </div>
 
@@ -40,8 +40,8 @@ function Section_cards() {
             </div>
             <div className="card-body">
               <div className="flex flex-col items-center">
-                <h2 className="card-title py-2 font-semibold">Dummy Card 1</h2>
-                <p className="py-1 font-thin">3 cards in a flex-wrap box</p>
+                <h2 className="card-title py-2 font-semibold text-white">Dummy Card 1</h2>
+                <p className="py-1 font-thin text-white">3 cards in a flex-wrap box</p>
                 {/* <div className="card-actions justify-end">
                   <button className="btn btn-primary">Listen</button>
                 </div> */}
@@ -71,8 +71,8 @@ function Section_cards() {
             </div>
             <div className="card-body">
               <div className="flex flex-col items-center">
-                <h2 className="card-title py-2 font-semibold">Dummy Card 1</h2>
-                <p className="py-1 font-thin">3 cards in a flex-wrap box</p>
+                <h2 className="card-title py-2 font-semibold text-white">Dummy Card 1</h2>
+                <p className="py-1 font-thin text-white">3 cards in a flex-wrap box</p>
                 {/* <div className="card-actions justify-end">
                   <button className="btn btn-primary">Listen</button>
                 </div> */}
@@ -102,8 +102,8 @@ function Section_cards() {
             </div>
             <div className="card-body">
               <div className="flex flex-col items-center">
-                <h2 className="card-title py-2 font-semibold">Dummy Card 1</h2>
-                <p className="py-1 font-thin">3 cards in a flex-wrap box</p>
+                <h2 className="card-title py-2 font-semibold text-white">Dummy Card 1</h2>
+                <p className="py-1 font-thin text-white">3 cards in a flex-wrap box</p>
                 {/* <div className="card-actions justify-end">
                   <button className="btn btn-primary">Listen</button>
                 </div> */}
@@ -133,8 +133,8 @@ function Section_cards() {
             </div>
             <div className="card-body">
               <div className="flex flex-col items-center">
-                <h2 className="card-title py-2 font-semibold">Dummy Card 1</h2>
-                <p className="py-1 font-thin">3 cards in a flex-wrap box</p>
+                <h2 className="card-title py-2 font-semibold text-white">Dummy Card 1</h2>
+                <p className="py-1 font-thin text-white">3 cards in a flex-wrap box</p>
                 {/* <div className="card-actions justify-end">
                   <button className="btn btn-primary">Listen</button>
                 </div> */}
@@ -164,8 +164,8 @@ function Section_cards() {
             </div>
             <div className="card-body">
               <div className="flex flex-col items-center">
-                <h2 className="card-title py-2 font-semibold">Dummy Card 1</h2>
-                <p className="py-1 font-thin">3 cards in a flex-wrap box</p>
+                <h2 className="card-title py-2 font-semibold text-white">Dummy Card 1</h2>
+                <p className="py-1 font-thin text-white">3 cards in a flex-wrap box</p>
                 {/* <div className="card-actions justify-end">
                   <button className="btn btn-primary">Listen</button>
                 </div> */}
@@ -201,8 +201,8 @@ function Section_cards() {
             </div>
             <div className="card-body">
               <div className="flex flex-col items-center">
-                <h2 className="card-title py-2 font-semibold">Dummy Card 1</h2>
-                <p className="py-1 font-thin">3 cards in a flex-wrap box</p>
+                <h2 className="card-title py-2 font-semibold text-white">Dummy Card 1</h2>
+                <p className="py-1 font-thin text-white">3 cards in a flex-wrap box</p>
                 {/* <div className="card-actions justify-end">
                   <button className="btn btn-primary">Listen</button>
                 </div> */}
@@ -232,8 +232,8 @@ function Section_cards() {
             </div>
             <div className="card-body">
               <div className="flex flex-col items-center">
-                <h2 className="card-title py-2 font-semibold">Dummy Card 2</h2>
-                <p className="py-1 font-thin">3 cards in a flex-wrap box</p>
+                <h2 className="card-title py-2 font-semibold text-white">Dummy Card 2</h2>
+                <p className="py-1 font-thin text-white">3 cards in a flex-wrap box</p>
                 {/* <div className="card-actions justify-end">
                   <button className="btn btn-primary">Listen</button>
                 </div> */}
@@ -263,8 +263,8 @@ function Section_cards() {
             </div>
             <div className="card-body">
               <div className="flex flex-col items-center">
-                <h2 className="card-title py-2 font-semibold">Dummy Card 3</h2>
-                <p className="py-1 font-thin">3 cards in a flex-wrap box</p>
+                <h2 className="card-title py-2 font-semibold text-white">Dummy Card 3</h2>
+                <p className="py-1 font-thin text-white">3 cards in a flex-wrap box</p>
                 {/* <div className="card-actions justify-end">
                   <button className="btn btn-primary">Listen</button>
                 </div> */}
@@ -365,9 +365,7 @@ function Section_cards() {
         </div>
       </div>
 
-      <div class="grid grid-cols-6 gap-4 bg-purple-900 px-36">
-
-
+      <div class="grid grid-cols-6 gap-0.5 bg-purple-900 px-4 md:8 lg:16 xl:px-32">
 
         {/* Dummy Card 1 */}
         <div className="m-w-40 col-span-4 col-start-2 card glass m-6 cursor-pointer rounded-lg bg-gray-900 p-4 shadow-xl transition-transform lg:card-side hover:scale-105">
