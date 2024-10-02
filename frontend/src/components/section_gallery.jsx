@@ -3,7 +3,7 @@ import React from 'react'
 function Section_gallery() {
   return (
     <>
-    <div className="w-screen h-screen bg-purple-900">
+    <div className="w-screen h-screen relative bg-purple-900">
         <div>Section Gallery</div>
 
         <div class="grid grid-cols-6 gap-0.25 px-4 md:px-8 lg:px-16 xl:px-32">

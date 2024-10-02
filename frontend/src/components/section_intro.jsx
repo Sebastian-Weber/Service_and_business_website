@@ -18,20 +18,34 @@ const intro = [
 function Section_intro() {
   return (
     <>
-      <div class="flex flex-col  relative justify-center items-center w-screen h-screen bg-white">
+      <div class="flex flex-col relative justify-center items-center w-screen h-screen bg-white">
 
         {/* <div className="flex flex-col text-xl justify-center items-center leading-tight sm:text-3xl md:text-4xl">
            Intro section
         </div> */}
 
-        <div class="flex flex-col justify-around items-center bg-white md:flex-row ">
+        <div class="flex flex-col justify-around items-center md:flex-row ">
 
           {/* left box */}
           <div class="flex flex-col w-fit md:w-3/6 h-auto bg-yellow-100 m-4">
 
             <div class="">sdfsdf</div>
-            <h2>Introsection - Heading</h2>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic repudiandae consequatur, sit animi cum culpa consectetur molestias? Ab aperiam neque blanditiis dolorum voluptates ea magni. Quod voluptatum iure beatae delectus suscipit consectetur autem dolorum necessitatibus quo nisi atque eius dolore reprehenderit earum, odio odit quam soluta a maxime cupiditate eaque? Non tempora consectetur error, repellendus dolorem ducimus aperiam dolores quam labore facilis provident aspernatur sunt ex odio id commodi voluptatum pariatur, amet consequatur cupiditate explicabo praesentium? Ab alias pariatur quidem, soluta ipsum dolor. Adipisci placeat voluptates voluptas, quasi minus est autem veritatis provident natus maxime, iusto corrupti quam beatae?</div>
+            <h2>Paul & Team – handwerk mit herz</h2>
+            <div>
+              <p>
+                Kompetent, freundlich und immer auf Augenhöhe – als Handwerksbetrieb für Bad- und Heizungssanierung, Klimaanlagen sowie Elektrotechnik stehen die Wünsche unserer Kund:innen an oberster Stelle. Als noch junges Unternehmen ist es uns dabei besonders wichtig, heute schon die Innovationen und Anforderungen von morgen im Blick zu haben.
+              </p>
+              <br></br>
+              <p>
+                Denn Digitalisierung und Energiewende sorgen auch in unserem Bereich für tiefgreifende Veränderungen. Vor diesem Hintergrund sehen wir uns als Partner unserer Kund:innen, informieren und beraten, um gemeinsam die jeweils individuell passenden, zukunftsfähigen Lösungen zu finden.
+              </p>
+              <br></br>
+              <p>
+                Unser Ziel dabei: Zufriedene Kunden:innen, die wissen, dass sie uns vertrauen können. Deshalb haben wir an unsere Handwerksleistungen auch die höchsten Ansprüche in Sachen Qualität und Service. Und daran lassen wir uns gerne messen.
+              </p>
+              <br></br>
+              <button>Mehr über uns erfahren</button>
+            </div>
           </div>  
 
           {/* right box */}

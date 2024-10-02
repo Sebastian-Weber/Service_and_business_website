@@ -11,6 +11,7 @@ import Section_banner from '../components/section_banner'
 import Section_hero from '../components/section_hero'
 import Section_team from '../components/section_team'
 import Section_contact from '../components/section_contact'
+import Section_text from '../components/section_text'
 
 function Home() {
   return (
@@ -18,10 +19,13 @@ function Home() {
     <div class="hero-bg-light-olive h-full">Home
         <Section_hero></Section_hero>
         <Section_intro></Section_intro>
+        <Section_text></Section_text>
         <Section_cards></Section_cards>
-        <Section_gallery></Section_gallery>
-        <Section_team></Section_team>
+        <Section_text></Section_text>
         <Section_banner></Section_banner>
+        <Section_gallery></Section_gallery>
+        <Section_banner></Section_banner>
+        <Section_team></Section_team>
         <Section_contact></Section_contact>
         <Footer></Footer>
         {/* <ResponsiveCardsTemplate/> */}

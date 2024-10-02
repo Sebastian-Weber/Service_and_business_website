@@ -40,7 +40,7 @@ function Section_hero() {
             <div className="flex flex-col  w-5/6 justify-center items-center">
               <img className=" " src={HeroLogo} alt="Hero Logo" />
               <br></br>
-              <div class="block ">
+              <div class="block font-fredoka text-xl ">
                 Ihre Adresse für Badsanierung, Heizungssanierung, Klimaanlagen und Elektroinstallationen rund um Köln.
               </div>
             </div>
