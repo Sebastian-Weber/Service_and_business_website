@@ -10,7 +10,7 @@ function Footer() {
   return (
     <>
       {/* small */} 
-      <div class="xl:invisible flex flex-row justify-center items-center bottom-0 w-screen nav-bg-color py-4">
+      <div class="xl:hidden flex flex-row justify-center items-center bottom-0 w-screen nav-bg-color py-4">
         <ul class="flex flex-col nav-text-color justify-center items-center">
           <li class="">
             <Link to="/">

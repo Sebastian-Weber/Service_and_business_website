@@ -5,7 +5,7 @@ import React from 'react'
 // SVGs
 import pattern from '/src/assets/patterns/pattern.svg'
 
-function Banner() {
+function Section_banner() {
   return (
     <>
     <div class="hero-bg-light-yellow">
@@ -15,4 +15,4 @@ function Banner() {
   )
 }
 
-export default Banner
+export default Section_banner
