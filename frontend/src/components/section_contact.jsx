@@ -9,7 +9,7 @@ function Section_contact() {
   return (
     <>
     <div>Section Contact</div>
-      <div className="w-screen h-fit relative -mt-96  bg-amber-500">
+      <div className="w-screen h-full bg-amber-500">
 
         <div class="flex flex-col relative justify-center items-center w-screen h-fit bg-white">
 

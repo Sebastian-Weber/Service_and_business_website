@@ -16,7 +16,7 @@ import Section_text from '../components/section_text'
 function Home() {
   return (
     <>
-    <div class="hero-bg-light-olive h-full">Home
+    <div class="hero-bg-light-olive">Home
         <Section_hero></Section_hero>
         <Section_intro></Section_intro>
         <Section_text></Section_text>
