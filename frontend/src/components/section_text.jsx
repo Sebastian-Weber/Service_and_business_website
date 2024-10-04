@@ -1,29 +1,33 @@
 import React from 'react'
 
-function Section_text() {
+function Section_text({ heading , description }) {
   return (
     <>
-      <div class="flex flex-col relative justify-center items-center py-24 px-4 md:px-24 bg-white ">
-        <div class="flex flex-col justify-around items-center md:flex-row ">
+      <div class="flex flex-col relative justify-between px-4 md:px-24 pt-24 bg-white ">
+
+        <div class="flex flex-col md:flex-row ">
 
           {/* left box */}
-          <div class="flex flex-col w-fit h-auto ">
+          <div class="flex flex-col w-fit h-auto md:w-1/2">
 
-            <h2 class="text-3xl font-medium font-fredoka text-stone-700">Unsere Leistungen</h2>
+            <h2 class="text-3xl font-medium font-fredoka text-stone-700">
+              {heading}
+            </h2>
             <br></br>
             <div>
               <p>
-                Sie möchten Ihr Bad sanieren, brauchen eine neue Heizung oder suchen einen Experten für Elektroinstallationen? Dann sind wir genau der richtige Partner für Sie! Gemeinsam finden wir eine passende Lösung für Ihre Anforderungen. Danach kümmern wir uns um alles Notwendige von der Planung bis zur Installation – kompetent, fachgerecht und immer auf Augenhöhe.
+                {description}
               </p>
               <br></br>
             </div>
           </div>  
 
           {/* right box */}
-          {/* <div class="flex flex-col text-xl justify-center items-center  m-4 text-gray-900">
-            <img class="w-auto h-auto" src={Image1}></img>
-          </div> */}
+          <div class="flex flex-col w-full md:w-1/2  h-auto">
+            <img class="w-auto h-auto"></img>
+          </div>
         </div>
+        <br></br>
       </div> 
     </>
   )

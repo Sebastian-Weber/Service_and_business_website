@@ -15,33 +15,6 @@ import Kitchen_countertop_installment from '/src/assets/images/Kitchen_counterto
 import test4 from '/src/assets/images/Placeholder.png'
 import test5 from '/src/assets/images/Placeholder.png'
 
-// Elder Gym Bro App
-
-// import ElderGymBroWireframeDashboard from '/src/assets/images/png/ElderGymBroApp/ElderGymBro_Wireframe_Dashboard.png'
-// import ElderGymBroDashboard from '/src/assets/images/png/ElderGymBroApp/ElderGymBro_Dashboard.png'
-// import ElderGymBroWorkouts from '/src/assets/images/png/ElderGymBroApp/ElderGymBro_Workouts.png'
-// import ElderGymBroAppDemo from '/src/assets/images/gif/ElderGymBroApp/ElderGymBro_Demo.gif'
-
-// Variables
-
-// const projectCards = [
-//     {
-//       // Elder Gym Bro App
-//       image1: ElderGymBroWireframeDashboard,
-//         image1Description: 'Figma prototype',
-//       image2: ElderGymBroDashboard,
-//         image2Description: 'Dashboard',
-//       image3: ElderGymBroWorkouts,
-//         image3Description: 'Workouts',
-//       image4: ElderGymBroAppDemo,
-//         image4Description: 'Mockup',  
-//       heading: 'ElderGymBro',
-//       subheading: 'ElderGymBro — Join the Cult!',
-//       description: 'Working on "ElderGymBro" was the grand finale of my WBS Coding School bootcamp experience. This last time we had the freedom to choose any topic we wanted to tackle as our final coding challenge. We decided to shake things up with a fitness app that was not only functional, but fun, and thus ElderGymBro was born, an Lovecraftian-themed fitness app for humans, blobs, and other abominations! For the first time, we took a mobile-first approach for one of our projects. Coming from a native software development background, this made me understand how web apps work and how to use TailwindCSS\'s flex-box and grid classes in order to craft responsive UIs for web apps. I dove deep into experimenting with a variety of tools and frameworks such as SASS, DaisyUI, WindUI, and Material UI, each with their own unique strengths and challenges. Together, we worked hard to find the perfect balance between design aesthetics and usability, from the first wireframes in Figma to the final deployed MERN app. This project was an incredible learning experience full of valuable lessons, and we had the fantastic opportunity to present our work at the WBS Coding School Community Day on campus in Berlin.',
-//       linkNetlify: 'https://eldergymbro.netlify.app/',
-//       linkGitHub: 'https://github.com/Sebastian-Weber/ElderGymBroApp',
-//     },
-//   ];
 
 const Navbar_XL_dropdown_items = [
     // Item 1
@@ -77,7 +50,7 @@ const Navbar_XL_dropdown_items = [
   ];
 
 
-function Navbar_xl_dropdown_energiekonzepte() {
+function Navbar_xl_dropdown_energiekonzepte({ name }) {
   return (
     <>
 
@@ -87,7 +60,7 @@ function Navbar_xl_dropdown_energiekonzepte() {
         <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
             <Link to="/Themenseite1">
                 <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color">
-                    Energiekonzepte
+                    {name}
                 </div>
             </Link>
             <div class="px-2">

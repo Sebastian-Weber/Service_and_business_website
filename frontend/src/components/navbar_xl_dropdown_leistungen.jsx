@@ -77,7 +77,7 @@ const Navbar_XL_dropdown_items = [
   ];
 
 
-function Navbar_xl_dropdown_leistungen() {
+function Navbar_xl_dropdown_leistungen({ name }) {
   return (
     <>
 
@@ -87,7 +87,7 @@ function Navbar_xl_dropdown_leistungen() {
         <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
             <Link to="/Themenseite1">
                 <div class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color">
-                    Leistungen
+                    {name}
                 </div>
             </Link>
             <div class="px-2">

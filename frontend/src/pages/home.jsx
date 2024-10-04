@@ -19,13 +19,14 @@ function Home() {
     <div class="hero-bg-light-olive">Home
         <Section_hero></Section_hero>
         <Section_intro></Section_intro>
-        <Section_text></Section_text>
-        <Section_cards></Section_cards>
-        <Section_text></Section_text>
-        <Section_banner></Section_banner>
+        <Section_text heading="Unsere Leistungen" description="Sie möchten Ihr Bad sanieren, brauchen eine neue Heizung oder suchen einen Experten für Elektroinstallationen? Dann sind wir genau der richtige Partner für Sie! Gemeinsam finden wir eine passende Lösung für Ihre Anforderungen. Danach kümmern wir uns um alles Notwendige von der Planung bis zur Installation – kompetent, fachgerecht und immer auf Augenhöhe."/>
+        <Section_cards image1="/src/assets/images/original/placeholder.png"/>
+        <Section_text heading="Energiekonzepte für die Zukunft" description="Die Energiewende ist heute wichtiger denn je. Deshalb bieten wir nachhaltige Lösungen für saubere Energiesysteme an – sowohl für ihr Zuhause als auch für die Industrie."/>
+        <Section_banner />
+        <Section_cards/>
         <Section_gallery></Section_gallery>
         <Section_team></Section_team>
-        <Section_banner></Section_banner>
+        <Section_banner />
         <Section_contact></Section_contact>
         <Footer></Footer>
         {/* <ResponsiveCardsTemplate/> */}

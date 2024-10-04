@@ -332,8 +332,9 @@ function Navbar() {
             {/* <Navbar_xl_dropdown_indoor></Navbar_xl_dropdown_indoor>
             <Navbar_xl_dropdown_outdoor></Navbar_xl_dropdown_outdoor>
             <Navbar_xl_dropdown_template></Navbar_xl_dropdown_template> */}
-            <Navbar_xl_dropdown_leistungen></Navbar_xl_dropdown_leistungen>
-            <Navbar_xl_dropdown_energiekonzepte></Navbar_xl_dropdown_energiekonzepte>
+            <Navbar_xl_dropdown_leistungen name="Leistungen"/>
+            <Navbar_xl_dropdown_energiekonzepte name="Energiekonzepte"/>
+            <Navbar_xl_dropdown_template name="Navbar_xl_dropdown_template"/>
 
 
               <Link class="flex flex-row items-start" to="/offene-stellen">
