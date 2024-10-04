@@ -105,9 +105,10 @@ function Navbar_xl_dropdown_energiekonzepte() {
                 {/* Menu item 1 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to="/">
-                    {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                        <img class="w-64 h-3/4" src={Dropdownitem.item_1_image}></img>
-                    ))}
+                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                        <div class="max-w-56 max-h-72">
+                            <img class="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_1_image}></img>
+                        </div>))}
                     </Link>
                     <br></br>
                     <Link>
@@ -134,8 +135,9 @@ function Navbar_xl_dropdown_energiekonzepte() {
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img class="w-64 h-3/4" src={Dropdownitem.item_2_image}></img>
-                        ))}
+                        <div class="max-w-56 max-h-72">
+                            <img class="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_2_image}></img>
+                        </div>))}
                     </Link>
                     <br></br>
                     <Link>
@@ -160,11 +162,13 @@ function Navbar_xl_dropdown_energiekonzepte() {
 
                 {/* Menu item 3 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
-                <Link to="/">
+                    <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img class="w-64 h-3/4" src={Dropdownitem.item_3_image}></img>
-                        ))}
+                        <div class="max-w-56 max-h-72">
+                            <img class="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_3_image}></img>
+                        </div>))}
                     </Link>
+                    <br></br>
                     <br></br>
                     <Link>
                         <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
@@ -188,10 +192,11 @@ function Navbar_xl_dropdown_energiekonzepte() {
       
                 {/* Menu item 4 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
-                <Link to="/">
+                    <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img class="w-64 h-3/4" src={Dropdownitem.item_4_image}></img>
-                        ))}
+                        <div class="max-w-56 max-h-56">
+                            <img class="w-full h-full object-cover aspect-auto " src={Dropdownitem.item_4_image}></img>
+                        </div>))}
                     </Link>
                     <br></br>
                     <Link>
@@ -214,7 +219,7 @@ function Navbar_xl_dropdown_energiekonzepte() {
                     </Link>
                 </div>
 
-                {/* Menu item 4 */}
+                {/* Menu item 5 */}
                 {/* <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                 <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (

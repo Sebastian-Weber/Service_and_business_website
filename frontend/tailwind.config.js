@@ -20,6 +20,7 @@ module.exports = {
         'paul-purple': '#DAC6C8',
         'paul-violet': '#D2D1D9',
         'paul-olive': '#A5A487',
+        'paul-rose': '#DAC6C8', 
         
         'cyan-bluish-gray': '#abb8c3',
         'pale-pink': '#f78da7',

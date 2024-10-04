@@ -28,7 +28,7 @@ function Section_intro() {
           <div class="flex flex-col w-screen md:w-3/6 p-4 h-auto ">
 
             <div class=""></div>
-            <h2 class="text-2xl font-medium font-fredoka text-stone-700">Paul & Team – Handwerk mit Herz</h2>
+            <h2 class="text-3xl font-medium font-fredoka text-stone-700">Paul & Team – Handwerk mit Herz</h2>
             <br></br>
             <div>
               <p>
@@ -48,7 +48,7 @@ function Section_intro() {
           </div>  
 
           {/* right box */}
-          <div class="flex flex-col text-xl justify-center items-center  m-4 text-gray-900">
+          <div class="flex flex-col text-xl justify-center items-center m-4 text-stone-700">
             <img class="w-auto h-auto" src={Image1}></img>
           </div>
         </div>

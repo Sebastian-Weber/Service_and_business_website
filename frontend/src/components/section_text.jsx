@@ -9,7 +9,7 @@ function Section_text() {
           {/* left box */}
           <div class="flex flex-col w-fit h-auto ">
 
-            <h2 class="text-2xl font-medium font-fredoka text-stone-700">Unsere Leistungen</h2>
+            <h2 class="text-3xl font-medium font-fredoka text-stone-700">Unsere Leistungen</h2>
             <br></br>
             <div>
               <p>

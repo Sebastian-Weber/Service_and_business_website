@@ -9,13 +9,13 @@ import Image1 from '/src/assets/images/original/Fahrrad.jpg'
 function Section_team() {
   return (
     <>
-      <div class="flex flex-col relative justify-center items-center w-fit h-fit px-4 py-24  bg-paul-olive ">
+      <div class="flex flex-col relative justify-center items-center w-screen h-fit px-4 py-24 md:px-24 bg-paul-olive ">
 
-        <div class="flex flex-col justify-around items-center  md:flex-row ">
+        <div class="flex flex-col justify-around items-center md:flex-row ">
 
           {/* left box */}
           <div class="flex flex-col p-2 h-auto">
-            <h2 class="text-2xl font-medium font-fredoka  text-stone-700">Werde Teil des Teams!</h2>
+            <h2 class="text-3xl font-medium font-fredoka text-stone-700">Werde Teil des Teams!</h2>
             <br></br>
             <div>
               <p>

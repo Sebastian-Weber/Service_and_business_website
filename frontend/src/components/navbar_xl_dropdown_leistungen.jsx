@@ -106,7 +106,9 @@ function Navbar_xl_dropdown_leistungen() {
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to="/">
                     {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                        <img class="w-64 h-auto" src={Dropdownitem.item_1_image}></img>
+                        <div class="max-w-56 max-h-72">
+                            <img class="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_1_image}></img>
+                        </div>
                     ))}
                     </Link>
                     <br></br>
@@ -134,7 +136,9 @@ function Navbar_xl_dropdown_leistungen() {
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img class="w-64 h-auto" src={Dropdownitem.item_2_image}></img>
+                        <div class="max-w-56 max-h-72">
+                            <img class="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_2_image}></img>
+                            </div>
                         ))}
                     </Link>
                     <br></br>
@@ -160,10 +164,11 @@ function Navbar_xl_dropdown_leistungen() {
 
                 {/* Menu item 3 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
-                <Link to="/">
+                    <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img class="w-64 h-auto" src={Dropdownitem.item_3_image}></img>
-                        ))}
+                        <div class="max-w-56 max-h-72">
+                            <img class="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_3_image}></img>
+                        </div>))}
                     </Link>
                     <br></br>
                     <Link>
@@ -190,8 +195,9 @@ function Navbar_xl_dropdown_leistungen() {
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                 <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img class="w-64 h-auto" src={Dropdownitem.item_4_image}></img>
-                        ))}
+                        <div class="max-w-56 max-h-64">
+                            <img class="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_4_image}></img>
+                        </div>))}
                     </Link>
                     <br></br>
                     <Link>
@@ -214,12 +220,13 @@ function Navbar_xl_dropdown_leistungen() {
                     </Link>
                 </div>
 
-                {/* Menu item 4 */}
+                {/* Menu item 5 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                 <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img class="w-64 h-auto" src={Dropdownitem.item_5_image}></img>
-                        ))}
+                        <div class="max-w-56 max-h-72">
+                               <img class="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_5_image}></img>
+                        </div>))}
                     </Link>
                     <br></br>
                     <Link>

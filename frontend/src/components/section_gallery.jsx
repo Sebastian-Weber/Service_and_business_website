@@ -19,7 +19,7 @@ function Section_gallery() {
     <>
     <div className="flex flex-row justify-center items-center relative bg-white">
 
-        <div class="m-4 md:mx-24 grid grid-cols-12 gap-6 w-screen">
+        <div class="m-4 my-32 md:mx-24 grid grid-cols-12 gap-6 w-screen">
 
           {/* Dummy Card 1 */}
           <div className="col-start-1 col-span-2 col-end-5">

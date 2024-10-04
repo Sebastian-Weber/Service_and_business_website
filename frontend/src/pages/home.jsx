@@ -24,8 +24,8 @@ function Home() {
         <Section_text></Section_text>
         <Section_banner></Section_banner>
         <Section_gallery></Section_gallery>
-        <Section_banner></Section_banner>
         <Section_team></Section_team>
+        <Section_banner></Section_banner>
         <Section_contact></Section_contact>
         <Footer></Footer>
         {/* <ResponsiveCardsTemplate/> */}

@@ -25,10 +25,11 @@ const Cards = [
 function Section_cards() {
   return (
     <>
-      <div class="flex flex-col justify-center items-center w-screen h-fit px-4 md:px-32 bg-white ">
+      <div class="flex flex-col justify-center items-center w-screen h-fit px-4 md:px-24 bg-white ">
 
         {/* first row */}
         <div class="flex flex-col justify-around items-center md:flex-row">
+
 
           {/* 1. box */}
           <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-beige m-2 p-12 lg:flex-row-reverse">
