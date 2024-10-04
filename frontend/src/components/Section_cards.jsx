@@ -25,7 +25,7 @@ const Cards = [
 function Section_cards() {
   return (
     <>
-      <div class="flex flex-col justify-center items-center w-screen h-fit px-4 md:px-24 bg-white ">
+      <div class="flex flex-col justify-center relative items-center w-screen h-fit py-16 px-4 md:px-24 bg-white ">
 
         {/* first row */}
         <div class="flex flex-col justify-around items-center md:flex-row">

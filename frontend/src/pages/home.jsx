@@ -22,8 +22,8 @@ function Home() {
         <Section_text heading="Unsere Leistungen" description="Sie möchten Ihr Bad sanieren, brauchen eine neue Heizung oder suchen einen Experten für Elektroinstallationen? Dann sind wir genau der richtige Partner für Sie! Gemeinsam finden wir eine passende Lösung für Ihre Anforderungen. Danach kümmern wir uns um alles Notwendige von der Planung bis zur Installation – kompetent, fachgerecht und immer auf Augenhöhe."/>
         <Section_cards image1="/src/assets/images/original/placeholder.png"/>
         <Section_text heading="Energiekonzepte für die Zukunft" description="Die Energiewende ist heute wichtiger denn je. Deshalb bieten wir nachhaltige Lösungen für saubere Energiesysteme an – sowohl für ihr Zuhause als auch für die Industrie."/>
-        <Section_banner />
         <Section_cards/>
+        <Section_banner />
         <Section_gallery></Section_gallery>
         <Section_team></Section_team>
         <Section_banner />
