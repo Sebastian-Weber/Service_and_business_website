@@ -22,13 +22,14 @@ function Section_intro() {
     <>
       <div class="flex flex-col relative justify-center items-center px-6 py-24 bg-white ">
 
-        <div class="flex flex-col justify-around items-center md:flex-row ">
+        <div class="flex flex-col justify-around items-center md:flex-row">
 
           {/* left box */}
-          <div class="flex flex-col w-screen md:w-3/6 p-4 h-auto ">
+          <div class="flex flex-col w-full md:w-3/6 p-4 h-auto  ">
 
-            <div class=""></div>
-            <h2 class="text-3xl font-medium font-fredoka text-stone-700">Paul & Team – Handwerk mit Herz</h2>
+
+            <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline decoration-paul-violet decoration-8">Paul & Team – Handwerk mit Herz</h2>
+
             <br></br>
             <div>
               <p>
@@ -42,6 +43,7 @@ function Section_intro() {
               <p>
                 Unser Ziel dabei: Zufriedene Kunden:innen, die wissen, dass sie uns vertrauen können. Deshalb haben wir an unsere Handwerksleistungen auch die höchsten Ansprüche in Sachen Qualität und Service. Und daran lassen wir uns gerne messen.
               </p>
+              <br></br>
               <br></br>
               <button class="button hover:shadow-xl hover:shadow-stone-300 px-2">Mehr über uns erfahren</button>
             </div>
