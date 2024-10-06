@@ -19,30 +19,30 @@ function Section_gallery() {
     <>
     <div className="flex flex-row justify-center items-center relative bg-white">
 
-        <div class="m-4 my-32 md:mx-24 grid grid-cols-12 gap-6 w-screen">
+        <div class="mx-6 my-32 md:mx-28 grid grid-cols-12 gap-6 w-screen">
 
           {/* Dummy Card 1 */}
           <div className="col-start-1 col-span-2 col-end-5">
-            <img class="h-full w-full" src={Image1}></img>
+            <img class="h-full w-auto" src={Image1}></img>
           </div>
           
           {/* Dummy Card 2 */}
           <div className="col-start-5 col-span-4 col-end-8">
-            <img class="h-full w-fit" src={Image2}></img>
+            <img class="h-full w-auto" src={Image2}></img>
           </div>
 
           {/* Dummy Card 3 */}
           <div className="col-start-8 col-span-2 col-end-12">
-            <img class="h-full w-fit" src={Image3}></img>
+            <img class="h-full w-auto" src={Image3}></img>
           </div>
 
           {/* Dummy Card 4 */}
-          <div className="col-start-1 col-span-2 col-end-9">
+          <div className="col-start-1 col-span-2 col-end-7">
             <img class="h-full w-fit" src={Image4}></img>
           </div>
 
           {/* Dummy Card 5 */}
-          <div className="col-start-9 col-span-2 col-end-12">
+          <div className="col-start-7 col-span-2 col-end-12">
             <img class="h-full w-fit" src={Image5}></img>
           </div>
 

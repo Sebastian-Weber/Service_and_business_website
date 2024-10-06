@@ -30,42 +30,40 @@ function Section_hero() {
 
   return (
     <>
-      <div className="flex flex-col justify-between items-center mt-36 md:flex-row ">
+      <div class="flex flex-col h-fit justify-center items-center lg:flex-row lg:justify-center lg:items-end lg:h-screen bg-paul-light-green">
 
-        <div className="flex flex-col pl-6 xl:px-18 w-screen h-auto ">
+
+
+      {/* left box */}
+        <div className="flex flex-col justify-center items-center py-36 pt-24 md:h-full">
 
           {/* Left box - text + image */}
-          <div class="flex flex-col md:flex-row px-22 md:px-22 lg-px-26 xl:px-20">
-
-            <div className="flex flex-col  w-5/6 justify-center items-center">
+          <div className="flex flex-col h-fit w-3/4 m-2">
               <img className="" src={HeroLogo} alt="Hero Logo" />
               <br></br>
-              <div class="block font-fredoka text-2xl text-stone-700 ">
+              <div class="font-fredoka text-2xl ">
                 Ihre Adresse für Badsanierung, Heizungssanierung, Klimaanlagen und Elektroinstallationen rund um Köln.
               </div>
+              <br></br>
             </div>
-            <br></br>
-
-          </div>  
-
-        </div> 
+          </div>
 
         {/* Right box - image */}
-        <div className="flex flex-col bottom-0 ">
+        <div className="flex flex-row justify-end items-end ">
           {/* image cog wheel */}
           <img
             ref={heroHomeRef}
-            className="w-full max-w-full "
+            className=" "
             src={HeroHome}
             alt="Hero Home"
           />
           {/* image front */}
           <img
-            className=" top-1/5 right-0 absolute"
+            className="absolute h-fit"
             src={HeroImg1}
             alt="Hero Image 1"
           />
-          <div className='w-fit h-5/6 bg-white'></div>
+
         </div>
 
       </div>
@@ -74,3 +72,4 @@ function Section_hero() {
 }
 
 export default Section_hero;
+

@@ -78,6 +78,9 @@ function Navbar() {
         <div className="relative group cursor-pointer">
           <div className="relative flex flex-row items-center justify-between nav-bg-color my-2">
             <img className="mr-6 cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
+          
+            <div className="bg-white w-8 h-1 rounded abolute top-4 -mt-0.5 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:translate-x-4 before:translate-y-3"></div>
+          
           </div>
 
           {/* Overlay menu */}
@@ -245,6 +248,8 @@ function Navbar() {
               <div className="relative group cursor-pointer">
                 <div className="relative flex flex-row items-center justify-between nav-bg-color my-2">
                   <img className="mr-6 cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
+                
+
                 </div>
 
                 {/* Overlay menu */}

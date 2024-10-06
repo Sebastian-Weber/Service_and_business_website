@@ -49,7 +49,7 @@ const texts = {
 function Home() {
   return (
     <>
-    <div class="hero-bg-light-olive">Home
+    <div class="flex-flex-col  bg-paul-light-rose">Home
         <Section_hero></Section_hero>
         <Section_intro></Section_intro>
         <Section_text 

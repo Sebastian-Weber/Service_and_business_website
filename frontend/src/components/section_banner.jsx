@@ -8,8 +8,8 @@ import pattern from '/src/assets/patterns/pattern.svg'
 function Section_banner() {
   return (
     <>
-    <div class="hero-bg-light-yellow h-96 bg-white">
-        <img class="w-fit" src={pattern}></img>
+    <div class="bg-paul-light-beige w-full">
+        <img class="w-full" src={pattern}></img>
     </div>
     </>
   )

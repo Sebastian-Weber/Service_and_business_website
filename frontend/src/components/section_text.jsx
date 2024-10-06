@@ -5,7 +5,7 @@ import React from 'react'
 function Section_text({ colors, texts, selectedColor }) {
   return (
     <>
-      <div className="flex flex-col relative justify-between px-4 md:px-24 pt-24 bg-white">
+      <div className="flex flex-col relative justify-between px-6 md:px-24 pt-24 bg-white">
         <div className="flex flex-col md:flex-row">
           {/* left box */}
           <div className="flex flex-col w-fit h-auto md:w-1/2">

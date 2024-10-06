@@ -20,12 +20,12 @@ const intro = [
 function Section_intro() {
   return (
     <>
-      <div class="flex flex-col relative justify-center items-center px-6 py-24 bg-white ">
+      <div class="flex flex-col relative justify-start items-start py-24 bg-white ">
 
-        <div class="flex flex-col justify-around items-center md:flex-row">
+        <div class="flex flex-col justify-center items-center md:flex-row">
 
           {/* left box */}
-          <div class="flex flex-col w-full md:w-3/6 p-4 h-auto  ">
+          <div class="flex flex-col w-full md:w-3/6 h-auto">
 
             <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-light-purple">Paul & Team – Handwerk mit Herz</h2>
 
