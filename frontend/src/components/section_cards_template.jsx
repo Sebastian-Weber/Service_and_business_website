@@ -47,7 +47,7 @@ function Section_cards_template() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ function Section_cards_template() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -102,7 +102,7 @@ function Section_cards_template() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -127,7 +127,7 @@ function Section_cards_template() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -158,7 +158,7 @@ function Section_cards_template() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -180,7 +180,7 @@ function Section_cards_template() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div> */}
 

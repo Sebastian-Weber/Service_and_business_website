@@ -9,12 +9,31 @@ import Image4 from '/src/assets/images/original/card4.png'
 import Image5 from '/src/assets/images/original/logo_bg.svg'
 
 const Cards = [
+
   {
-    // card ressources
     Image1: Image1,
     Headline1: 'abcd ',
-    Subheadline1: 'abcd ',
-    // image1: Placeholder,
+    Description1: 'Von der Installation bis zur Renovierung, planen Sie individuell mit unserem 3D-Programm und genießen Sie barrierefreie Gestaltung. Perfektion in jedem Detail – von Sanitäranlagen bis Fliesenverlegung.',
+  },
+  {
+    Image2: Image2,
+    Headline2: 'Heizungssanierung',
+    Description2: 'Entdecken Sie unseren Rundum-Service für Ihre Heizung: Beratung zu Heiztechnologien, Installation und Reparatur von Anlagen, regelmäßige Wartung, Wärmepumpen-Installation und Rohrleitungsservice.',
+  },
+  {
+    Image3: Image3,
+    Headline3: 'Klimaanlagen',
+    Description3: 'Entdecken Sie unsere Kompetenz in Sachen Klima: Beratung, Planung, Installation von Klima- und Kältelösungen für Privat und Industrie, inklusive Klimaanlagen, Kühlzellen und regelmäßiger Wartung. ',
+  },
+  {
+    Image4: Image4,
+    Headline4: 'Elektroinstallationen',
+    Description4: 'Kabelverlegung, Installation von Steckdosen und Schaltern, Erneuerung alter Elektroinstallationen, Beratung, Planung und Installation von Smart-Home-Lösungen sowie Photovoltaikanlagen und Wallboxen.',
+  },
+  {
+    Image5: Image5,
+    Headline5: 'Komplettsanierungen',
+    Description5: 'Wir bieten auch schlüsselfertige Komplettsanierungen an. Beschreiben Sie einfach ihr Vorhaben über unser Kontaktformular, wir kommen dann auf Sie zu!',
   },
 ];
 
@@ -48,7 +67,7 @@ function Section_cards_leistungen() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -73,7 +92,7 @@ function Section_cards_leistungen() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -103,7 +122,7 @@ function Section_cards_leistungen() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -128,7 +147,7 @@ function Section_cards_leistungen() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -159,7 +178,7 @@ function Section_cards_leistungen() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div>
 
@@ -181,7 +200,7 @@ function Section_cards_leistungen() {
               </p>
               <br></br>
               <br></br>
-              <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
+              <button className="">Mehr erfahren</button>
             </div>
           </div> */}
 
