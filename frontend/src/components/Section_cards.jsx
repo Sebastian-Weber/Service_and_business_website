@@ -17,9 +17,6 @@ const Cards = [
     // image1: Placeholder,
 
   },
-
-
-
 ];
 
 function Section_cards() {
@@ -32,7 +29,7 @@ function Section_cards() {
 
 
           {/* 1. box */}
-          <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-beige m-2 p-12 lg:flex-row-reverse">
+          <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-light-beige m-2 p-12 lg:flex-row-reverse">
             <div className="flex-row md:flex-col items-center">
             <div class="flex flex-row justify-start items-start ">
               <img class="w-42" src={Image1}></img>
@@ -42,7 +39,7 @@ function Section_cards() {
             </div>
             <div class="w-fit">
               <div>
-                <h2 class="text-2xl font-medium font-fredoka text-stone-700">
+                <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-dark-beige">
                   Badsanierung
                 </h2>
               </div>
@@ -57,7 +54,7 @@ function Section_cards() {
           </div>
 
           {/* 2. box */}
-          <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-green m-2 p-12 lg:flex-row-reverse">
+          <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-light-green m-2 p-12 lg:flex-row-reverse">
             <div className="flex-row md:flex-col items-center">
             <div class="flex flex-row justify-start items-start ">
               <img class="w-42" src={Image2}></img>
@@ -67,7 +64,7 @@ function Section_cards() {
             </div>
             <div class="w-fit">
               <div>
-                <h2 class="text-2xl font-medium font-fredoka text-stone-700">
+              <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-dark-green">
                   Badsanierung
                 </h2>
               </div>
@@ -86,8 +83,8 @@ function Section_cards() {
         {/* second row */}
         <div class="flex flex-col justify-around items-center md:flex-row">
 
-        {/* 3. box */}
-        <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-purple m-2 p-12 lg:flex-row-reverse">
+          {/* 3. box */}
+          <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-light-rose m-2 p-12 lg:flex-row-reverse">
             <div className="flex-row md:flex-col items-center">
             <div class="flex flex-row justify-start items-start ">
               <img class="w-42" src={Image3}></img>
@@ -97,7 +94,7 @@ function Section_cards() {
             </div>
             <div class="w-fit">
               <div>
-                <h2 class="text-2xl font-medium font-fredoka text-stone-700">
+              <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-dark-rose">
                   Badsanierung
                 </h2>
               </div>
@@ -112,7 +109,7 @@ function Section_cards() {
           </div>
 
         {/* 4. box */}
-          <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-violet m-2 p-12 lg:flex-row-reverse">
+        <div className="flex flex-col md:w-3/6 lg:w-4/6 rounded-3xl bg-paul-light-purple m-2 p-12 lg:flex-row-reverse">
             <div className="flex-row md:flex-col items-center">
             <div class="flex flex-row justify-start items-start ">
               <img class="w-42" src={Image4}></img>
@@ -122,7 +119,7 @@ function Section_cards() {
             </div>
             <div class="w-fit">
               <div>
-                <h2 class="text-2xl font-medium font-fredoka text-stone-700">
+              <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-dark-purple">
                   Badsanierung
                 </h2>
               </div>
@@ -143,7 +140,7 @@ function Section_cards() {
 
 
         {/* 5. box */}
-        <div className="flex flex-col md:w-full lg:w-full xl:w-full rounded-3xl bg-paul-beige m-2 p-12  lg:flex-row-reverse">
+        <div className="flex flex-col md:w-full lg:w-full xl:w-full rounded-3xl bg-paul-light-beige m-2 p-12  lg:flex-row-reverse">
             <div className="flex-row md:flex-col items-center">
             <div class="flex flex-row justify-start items-start">
               <img class="w-48" src={Image5}></img>
@@ -153,7 +150,7 @@ function Section_cards() {
             </div>
             <div class="w-fit">
               <div>
-                <h2 class="text-2xl font-medium font-fredoka text-stone-700">
+              <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-dark-beige">
                   Badsanierung
                 </h2>
               </div>

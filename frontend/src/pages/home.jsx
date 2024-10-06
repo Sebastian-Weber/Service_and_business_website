@@ -5,7 +5,7 @@ import ResponsiveCardsTemplate from '../components/responsiveCardsTemplate'
 import Banner from '../components/section_banner'
 import Header from '../components/header'
 import Section_intro from '../components/section_intro'
-import Section_cards from '../components/Section_cards'
+import Section_cards from '../components/section_cards'
 import Section_gallery from '../components/section_gallery'
 import Section_banner from '../components/section_banner'
 import Section_hero from '../components/section_hero'
@@ -56,14 +56,13 @@ function Home() {
           colors={colors} 
           texts={texts.Leistungen} 
           selectedColor="paul_light_beige"/>
-        <Section_cards />
+        {/* <Section_cards /> */}
         <Section_text 
           colors={colors} 
           texts={texts.Energiekonzepte} 
           selectedColor="paul_light_green"/>
         <Section_cards/>
-
-        {/* <Section_cards_leistungen/> */}
+        <Section_cards_leistungen/>
         <Section_banner />
         <Section_gallery></Section_gallery>
         <Section_team></Section_team>

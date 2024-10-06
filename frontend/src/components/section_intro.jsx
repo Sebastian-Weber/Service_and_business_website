@@ -27,8 +27,7 @@ function Section_intro() {
           {/* left box */}
           <div class="flex flex-col w-full md:w-3/6 p-4 h-auto  ">
 
-
-            <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline decoration-paul-violet decoration-8">Paul & Team – Handwerk mit Herz</h2>
+            <h2 class="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-light-purple">Paul & Team – Handwerk mit Herz</h2>
 
             <br></br>
             <div>
