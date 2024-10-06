@@ -11,7 +11,7 @@ function Section_contact() {
     <>
       <div className="flex flex-col relative justify-between px-4 md:px-24 py-24 bg-paul-light-rose">
 
-        <div className="flex flex-col lg:flex-row ">
+        <div className="flex flex-col md:px-12 lg:flex-row ">
 
         {/* left box */}
           <div className="flex flex-col justify-start p-2 xl:w-3/6">
@@ -77,7 +77,7 @@ function Section_contact() {
               </div>
               <br></br>
               </div>
-              <button className="w-fit">Nachricht senden</button>
+              <button className="">Nachricht senden</button>
             </form>
             <br></br>
             <br></br>

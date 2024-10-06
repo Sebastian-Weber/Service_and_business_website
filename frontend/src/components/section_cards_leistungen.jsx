@@ -22,10 +22,10 @@ const Cards = [
 function Section_cards_leistungen() {
   return (
     <>
-      <div className="flex flex-col justify-center relative items-center py-16 px-4 md:px-24 bg-white ">
+      <div className="flex flex-col justify-center relative items-center py-16 md:px-24 bg-white ">
 
         {/* first row */}
-        <div className="flex flex-col justify-around items-center md:flex-row">
+        <div className="flex flex-col justify-around items-center md:px-12 md:flex-row">
 
           {/* 1. box */}
           <div className="flex flex-col lg:w-2/3 lg:flex-col rounded-3xl bg-paul-light-beige m-2 p-12 ">
@@ -80,7 +80,7 @@ function Section_cards_leistungen() {
         </div>
 
         {/* second row */}
-        <div className="flex flex-col justify-around items-center md:flex-row">
+        <div className="flex flex-col justify-around items-center md:px-12 md:flex-row">
 
           {/* 3. box */}
           <div className="flex flex-col lg:w-2/3 lg:flex-col rounded-3xl bg-paul-light-rose m-2 p-12 ">
@@ -135,11 +135,11 @@ function Section_cards_leistungen() {
         </div>
 
         {/* third row */}
-        <div className="flex flex-row justify-start items-start md:flex-row">
+        <div className="flex flex-row  justify-start items-start md:px-12 md:flex-row">
 
 
         {/* 5. box */}
-          <div className="flex flex-col lg:w-full lg:flex-col rounded-3xl bg-paul-light-beige m-2 p-12 ">
+        <div className="flex flex-col w-full lg:flex-col rounded-3xl bg-paul-light-beige m-2 p-12 ">
             <div className="flex flex-row md:flex-col items-start ">
             <div className="flex flex-row justify-start items-start ">
               <img className="w-1/3" src={Image5}></img>
@@ -162,6 +162,8 @@ function Section_cards_leistungen() {
               <button className="button hover:shadow-xl hover:shadow-stone-300">Mehr erfahren</button>
             </div>
           </div>
+
+          
 
           {/* left box */}
           {/* <div className="flex flex-col w-fit h-auto rounded-3xl bg-orange-200 m-4 p-12">

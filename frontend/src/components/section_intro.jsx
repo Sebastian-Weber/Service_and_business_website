@@ -19,7 +19,7 @@ function Section_intro() {
     <>
       <div className="flex flex-col relative justify-between px-4 md:px-24 py-24 bg-white">
 
-        <div className="flex flex-col justify-between lg:flex-row ">
+        <div className="flex flex-col justify-around lg:flex-row ">
 
           {/* left box */}
           <div className="flex flex-col w-full mr-2 md:w-3/6 h-auto">
@@ -47,7 +47,7 @@ function Section_intro() {
 
           {/* right box */}
           <div className="flex flex-col text-xl justify-start items-start">
-            <img className="w-auto h-auto" src={Image1}></img>
+            <img className="w-full h-auto" src={Image1}></img>
           </div>
         </div>
       </div> 
