@@ -30,7 +30,9 @@ module.exports = {
 
         'paul-light-rose': '#DAC6C8', 
         'paul-rose': '#BB989C',
-        'paul-dark-rose': '#B58D90',  
+        'paul-dark-rose': '#B58D90',
+
+        'paul-dark-violet': '#2E2936',
  
         // 'paul-light-olive': '#A5A487',
         // 'paul-olive': '#A5A487',

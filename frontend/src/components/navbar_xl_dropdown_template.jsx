@@ -3,9 +3,6 @@ import { Link, Route, Routes } from "react-router-dom";
 
 // image resources
 import Placeholder from '/src/assets/images/Placeholder.png'
-import Placeholder2 from '/src/assets/images/Placeholder.png'
-
-// import more files here and assign as properties
 
 
 const Navbar_XL_dropdown_items = [
@@ -42,7 +39,7 @@ const Navbar_XL_dropdown_items = [
   ];
 
 
-function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jpg" })  {
+function Navbar_xl_dropdown_template({ })  {
   return (
     <>
 
@@ -52,7 +49,6 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
         <div class="relative flex flex-row items-center justify-between nav-bg-color my-2">
             <Link to="/Themenseite1">
                 <div  class="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color ">
-                {name}
                 </div>
             </Link>
             <div class="px-2">
@@ -70,14 +66,14 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                 {/* Menu item 1 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to="/">
-                    {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                    {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                         <img class="w-64 h-auto" src={Dropdownitem.item_1_image}></img>
                     ))}
                     </Link>
                     <br></br>
                     <Link>
                         <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_1_heading}
                             </div>
@@ -86,7 +82,7 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                     </Link>
                     <Link>
                         <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_1_subheading}
                             </div>
@@ -98,14 +94,14 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                 {/* Menu item 2 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to="/">
-                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                        {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <img class="w-64 h-auto" src={Dropdownitem.item_2_image}></img>
                         ))}
                     </Link>
                     <br></br>
                     <Link>
                         <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_2_heading}
                             </div>
@@ -114,7 +110,7 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                     </Link>
                     <Link>
                         <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_2_subheading}
                             </div>
@@ -126,14 +122,14 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                 {/* Menu item 3 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                 <Link to="/">
-                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                        {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <img class="w-64 h-auto" src={Dropdownitem.item_3_image}></img>
                         ))}
                     </Link>
                     <br></br>
                     <Link>
                         <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_3_heading}
                             </div>
@@ -142,7 +138,7 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                     </Link>
                     <Link>
                         <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_3_subheading}
                             </div>
@@ -154,14 +150,14 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                 {/* Menu item 4 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                 <Link to="/">
-                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                        {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <img class="w-64 h-auto" src={Dropdownitem.item_4_image}></img>
                         ))}
                     </Link>
                     <br></br>
                     <Link>
                         <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_4_heading}
                             </div>
@@ -170,7 +166,7 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                     </Link>
                     <Link>
                         <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_4_subheading}
                             </div>
@@ -182,14 +178,14 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                 {/* Menu item 4 */}
                 <div class="flex flex-col justify-normal items-start px-6 max-w-72">
                 <Link to="/">
-                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                        {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <img class="w-64 h-auto" src={Dropdownitem.item_5_image}></img>
                         ))}
                     </Link>
                     <br></br>
                     <Link>
                         <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_5_heading}
                             </div>
@@ -198,7 +194,7 @@ function Navbar_xl_dropdown_template({ name, src="https://i.imgur.com/1bX5QH6.jp
                     </Link>
                     <Link>
                         <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
+                            {Navbar_XL_dropdown_items.map((Dropdownitem) => (
                             <div class="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_5_subheading}
                             </div>

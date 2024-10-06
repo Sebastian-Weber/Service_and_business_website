@@ -1,4 +1,5 @@
-import React from 'react'
+
+
 
 // --- Image resources ---
 
@@ -8,8 +9,8 @@ import pattern from '/src/assets/patterns/pattern.svg'
 function Section_banner() {
   return (
     <>
-    <div class="bg-paul-light-beige w-full">
-        <img class="w-full" src={pattern}></img>
+    <div className="hidden md:block h-96 bg-paul-light-beige ">
+        <img className="w-screen h-auto" src={pattern}></img>
     </div>
     </>
   )

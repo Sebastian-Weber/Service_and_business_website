@@ -1,11 +1,7 @@
-import React from 'react'
-import Introsection from '../components/section_intro'
+
 import Footer from '../components/footer'
-import ResponsiveCardsTemplate from '../components/responsiveCardsTemplate'
-import Banner from '../components/section_banner'
-import Header from '../components/header'
 import Section_intro from '../components/section_intro'
-import Section_cards from '../components/section_cards'
+import Section_cards_template from '../components/section_cards_template'
 import Section_gallery from '../components/section_gallery'
 import Section_banner from '../components/section_banner'
 import Section_hero from '../components/section_hero'
@@ -49,7 +45,7 @@ const texts = {
 function Home() {
   return (
     <>
-    <div class="flex-flex-col  bg-paul-light-rose">Home
+    <div className="flex-flex-col  bg-paul-light-rose">Home
         <Section_hero></Section_hero>
         <Section_intro></Section_intro>
         <Section_text 
@@ -61,7 +57,7 @@ function Home() {
           colors={colors} 
           texts={texts.Energiekonzepte} 
           selectedColor="paul_light_green"/>
-        <Section_cards/>
+        <Section_cards_template/>
         <Section_cards_leistungen/>
         <Section_banner />
         <Section_gallery></Section_gallery>

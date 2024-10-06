@@ -8,18 +8,17 @@ import Image3 from '/src/assets/images/original/card3.png'
 import Image4 from '/src/assets/images/original/card4.png'
 import Image5 from '/src/assets/images/original/logo_bg.svg'
 
-const Cards = [
-  {
-    // card ressources
-    Image1: Image1,
-    Headline1: 'abcd ',
-    Subheadline1: 'abcd ',
-    // image1: Placeholder,
-  },
-];
+// const Cards = [
+//   {
+//     // card ressources
+//     Headline1: 'abcd ',
+//     Subheadline1: 'abcd ',
+//     // image1: Placeholder,
 
+//   },
+// ];
 
-function Section_cards_leistungen() {
+function Section_cards_template() {
   return (
     <>
       <div className="flex flex-col justify-center relative items-center py-16 px-4 md:px-24 bg-white ">
@@ -189,4 +188,4 @@ function Section_cards_leistungen() {
   )
 }
 
-export default Section_cards_leistungen
+export default Section_cards_template
