@@ -55,9 +55,9 @@ function Navbar() {
   return (
     <>
       {/* small */}
-      <div className="flex flex-row absolute justify-between items-center t-0 py-6 w-screen bg-paul-dark-violet px-6">
+      <div className="flex flex-row absolute justify-between items-center t-0 py-7 w-screen bg-paul-dark-violet px-6">
         <Link to="/" onClick={closeOverlay}>
-          <div className="ml-4 py-2" src={Firmenlogo} alt="Firmenlogo" />
+          <img className="w-16 ml-2" src={Firmenlogo} alt="Firmenlogo" />
         </Link>
 
         {/* Hamburger Menu Dropdown */}
@@ -65,12 +65,27 @@ function Navbar() {
           <div className="relative flex flex-row items-center justify-between nav-bg-color my-2">
             <div className="mr-6 cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
           
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#FBEBC0" viewBox="0 0 24 24" strokeWidth={3} stroke="#FBEBC0" className="w-8 h-auto scale-150 -pt-2 -ml-2 hover:rotate-180">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-            <div className="bg-white w-8 h-1 rounded abolute top-4 -mt-0.5 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:translate-x-4 before:translate-y-3"></div>
+              {/* Hamburger Icon*/}
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#FBEBC0" viewBox="0 0 24 24" strokeWidth={1} stroke="#FBEBC0" className="w-8 h-auto scale-150 -pt-2 -ml-2 hover:rotate-180" onClick={toggleOverlay}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
           
-
+              <div className="mr-6 cursor-pointer"  >
+                {/* Hamburger Icon WIP*/}
+                <div className="bg-white w-8 h-1 rounded abolute top-4 -mt-0.5 
+                    before:content-['']
+                  before:bg-white
+                    before:w-8 
+                    before:h-1 
+                    before:rounded 
+                    before:absolute 
+                    before:transition-all 
+                    before:duration-500 
+                    before:translate-x-4 
+                    before:translate-y-3" onClick={toggleOverlay} 
+                    alt="Hamburger Menu" >
+                </div>
+            </div>
 
           </div>
 
@@ -89,10 +104,8 @@ function Navbar() {
                     <div className="">Leistungen</div>
                     <div className="ml-2">
 
-{/* Hier icon ersetzen */}
-
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" strokeWidth="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                       </svg>
                     </div>
                       </div>
@@ -114,8 +127,8 @@ function Navbar() {
                   <div className="flex flex-row menu-hover cursor-pointer" onClick={toggleEnergiekonzepteExpander}>
                     <div className="">Energiekonzepte</div>
                     <div className="ml-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" strokeWidth="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                       </svg>
                     </div>
                       </div>
@@ -142,9 +155,9 @@ function Navbar() {
       </div>
 
       {/* Medium */}
-      <div className="hidden md:flex flex-row absolute justify-between items-center t-0 py-6 w-screen bg-paul-dark-violet px-6">
+      <div className="hidden md:flex flex-row absolute justify-between items-center t-0 py-7 w-screen bg-paul-dark-violet px-6">
         <Link to="/" onClick={closeOverlay}>
-          <img className="ml-4 py-2" src={Firmenlogo} alt="Firmenlogo" />
+          <img className="ml-2 w-16" src={Firmenlogo} alt="Firmenlogo" />
         </Link>
 
         <div className="relative group cursor-pointer">
@@ -172,8 +185,8 @@ function Navbar() {
                   <div className="flex flex-row menu-hover cursor-pointer" onClick={toggleLeistungenExpander}>
                     <div className="">Leistungen</div>
                     <div className="ml-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" strokeWidth="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                       </svg>
                     </div>
                       </div>
@@ -195,8 +208,8 @@ function Navbar() {
                   <div className="flex flex-row menu-hover cursor-pointer" onClick={toggleEnergiekonzepteExpander}>
                     <div className="">Energiekonzepte</div>
                     <div className="ml-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" strokeWidth="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                       </svg>
                     </div>
                       </div>
@@ -225,10 +238,10 @@ function Navbar() {
           </div>
   
           {/* large */}
-          <div className="hidden lg:flex flex-row absolute justify-between items-center t-0 py-6 w-screen  bg-paul-dark-violet px-6">
+          <div className="hidden lg:flex flex-row absolute justify-between items-center t-0 py-7 w-screen  bg-paul-dark-violet px-6">
             
           <Link to="/" onClick={closeOverlay}>
-            <img className="ml-4 py-2" src={Firmenlogo} alt="Firmenlogo" />
+            <img className="w-16 py-2" src={Firmenlogo} alt="Firmenlogo" />
           </Link>
 
             <div className="flex flex-row items-center justify-end mx-2">
@@ -260,8 +273,8 @@ function Navbar() {
                         <div className="flex flex-row menu-hover cursor-pointer" onClick={toggleLeistungenExpander}>
                           <div className="">Leistungen</div>
                           <div className="ml-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" strokeWidth="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
                           </div>
                             </div>
@@ -283,8 +296,8 @@ function Navbar() {
                         <div className="flex flex-row menu-hover cursor-pointer" onClick={toggleEnergiekonzepteExpander}>
                           <div className="">Energiekonzepte</div>
                           <div className="ml-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" stroke-width="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="FBEBC0" viewBox="0 0 24 24" strokeWidth="3" stroke="#FBEBC0" className="h-6 w-6 scale-75 -pt-2 -ml-2 hover:rotate-180">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
                           </div>
                             </div>
@@ -313,10 +326,10 @@ function Navbar() {
   
   
           {/* xl */}
-          <div className="absolute hidden xl:flex flex-row justify-between items-center t-0 py-6 w-screen  bg-paul-dark-violet px-6">
+          <div className="absolute hidden xl:flex flex-row justify-between items-center t-0 py-7 w-screen  bg-paul-dark-violet px-6">
             <div className="flex flex-row justify-start items-center">
               <Link className="flex flex-row items-start" to="/" onClick={closeOverlay}>
-                <img className="ml-4 py-2" src={Firmenlogo}></img>
+                <img className="w-16 py-2" src={Firmenlogo}></img>
               </Link>
     
               <div className="flex flex-row justify-start items-center mx-4">
