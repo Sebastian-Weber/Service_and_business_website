@@ -1,4 +1,3 @@
-import {  } from 'react';
 import { Link } from "react-router-dom";
 
 // image resources
@@ -7,7 +6,6 @@ import Navbar_XL_dropdown_item_2_image from '/src/assets/images/original/Bildsch
 import Navbar_XL_dropdown_item_3_image from '/src/assets/images/original/wallbox.png'
 import Navbar_XL_dropdown_item_4_image from '/src/assets/images/original/Waermepumpe.png'
 import Navbar_XL_dropdown_item_5_image from '/src/assets/images/original/kevin_sauna-2-scaled.jpg'
-// import Placeholder from '/src/assets/images/Placeholder.png'
 
 
 const Navbar_XL_dropdown_items = [
@@ -51,7 +49,7 @@ function Navbar_xl_dropdown_energiekonzepte({ name }) {
     {/* Indoor services Dropdown */}
     <div className="relative group cursor-pointer mx-2">
 
-        <div className="relative flex flex-row items-center justify-between nav-bg-color my-2">
+        <div className="relative flex flex-row items-center justify-between nav-bg-color">
             <Link to="/Themenseite1">
                 <div className="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color">
                     {name}

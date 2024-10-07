@@ -9,6 +9,7 @@ import Section_team from '../components/section_team'
 import Section_contact from '../components/section_contact'
 import Section_text from '../components/section_text'
 import Section_cards_leistungen from '../components/section_cards_leistungen'
+import Section_cards_energiekonzepte from '../components/section_cards_energiekonzepte'
 
 const colors = {
   paul_light_beige: 'decoration-paul-light-beige',
@@ -48,17 +49,18 @@ function Home() {
     <div className="flex-flex-col  bg-paul-light-rose">Home
         <Section_hero></Section_hero>
         <Section_intro></Section_intro>
+        {/* <Section_cards /> */}
+        {/* <Section_cards_template/> */}
         <Section_text 
           colors={colors} 
           texts={texts.Leistungen} 
           selectedColor="paul_light_beige"/>
-        {/* <Section_cards /> */}
+        <Section_cards_leistungen/>
         <Section_text 
           colors={colors} 
           texts={texts.Energiekonzepte} 
           selectedColor="paul_light_green"/>
-        <Section_cards_template/>
-        <Section_cards_leistungen/>
+        <Section_cards_energiekonzepte/>
         <Section_banner />
         <Section_gallery></Section_gallery>
         <Section_team></Section_team>

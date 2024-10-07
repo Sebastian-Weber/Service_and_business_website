@@ -1,6 +1,4 @@
 
-
-
 // --- Image resources ---
 import Image1 from '/src/assets/images/original/card1.png'
 import Image2 from '/src/assets/images/original/card2.png'
@@ -11,23 +9,22 @@ import Image5 from '/src/assets/images/original/logo_bg.svg'
 
 // --- Text resources ---
 
-const Headline1 = 'Badsanierung';
-const Description1 = 'Von der Installation bis zur Renovierung, planen Sie individuell mit unserem 3D-Programm und genießen Sie barrierefreie Gestaltung. Perfektion in jedem Detail – von Sanitäranlagen bis Fliesenverlegung.';
+const Headline1 = 'Wärmepumpe';
+const Description1 = 'Beratung, Bedarfsanalyse, Installation, Wartung. Alles rund um das energieeffiziente und zukunftssichere Wärmepumpensystem. Heizen und kühlen Sie nachhaltig.';
        
-const Headline2 = 'Heizungssanierung';
-const Description2 ='Entdecken Sie unseren Rundum-Service für Ihre Heizung: Beratung zu Heiztechnologien, Installation und Reparatur von Anlagen, regelmäßige Wartung, Wärmepumpen-Installation und Rohrleitungsservice.';
+const Headline2 = 'Photovoltaik-Anlagen';
+const Description2 ='Nutzen Sie mit unseren Photovoltaikanlagen Sonnenenergie zur Stromerzeugung, senken Sie Energiekosten und schützen die Umwelt. Umfassende Lösungen für private und gewerbliche Kunden.';
 
-const Headline3 = 'Klimaanlagen';
-const Description3 ='Entdecken Sie unsere Kompetenz in Sachen Klima: Beratung, Planung, Installation von Klima- und Kältelösungen für Privat und Industrie, inklusive Klimaanlagen, Kühlzellen und regelmäßiger Wartung.';
+const Headline3 = 'Wallboxen';
+const Description3 ='Entdecken Sie Wallboxen: Schnelles, sicheres Laden für Elektroautos. Komplettservice inklusive Beratung, Installation und Wartung.';
 
-const Headline4 = 'Elektroinstallationen';
-const Description4 ='Kabelverlegung, Installation von Steckdosen und Schaltern, Erneuerung alter Elektroinstallationen, Beratung, Planung und Installation von Smart-Home-Lösungen sowie Photovoltaikanlagen und Wallboxen.';
+const Headline4 = 'Solarthermie-Anlagen';
+const Description4 ='Solarthermie nutzt Sonnenlicht zur umweltfreundlichen Wärmeerzeugung. Sparen Sie Energie und schützen Sie das Klima mit unseren Planungs- und Wartungsdiensten.';
 
-const Headline5 = 'Komplettsanierungen';
-const Description5 ='Wir bieten auch schlüsselfertige Komplettsanierungen an. Beschreiben Sie einfach ihr Vorhaben über unser Kontaktformular, wir kommen dann auf Sie zu!';
+// const Headline5 = 'Komplettsanierungen';
+// const Description5 ='Wir bieten auch schlüsselfertige Komplettsanierungen an. Beschreiben Sie einfach ihr Vorhaben über unser Kontaktformular, wir kommen dann auf Sie zu!';
 
-
-function Section_cards_leistungen() {
+function Section_cards_energiekonzepte() {
   return (
     <>
     <div className="flex flex-col justify-center relative items-center py-16 md:px-24 bg-white ">
@@ -51,11 +48,9 @@ function Section_cards_leistungen() {
             </h2>
           </div>
           <br></br>
-          <p className="text-lg font-normal font-fredoka">
-          {Description1}
+          <p className="text-lg md:min-h-96 md:min-w-52 xl:min-h-48 font-normal font-fredoka">
+            {Description1}
           </p>
-          <br></br>
-          <br></br>
           <button className="">Mehr erfahren</button>
         </div>
       </div>
@@ -76,11 +71,9 @@ function Section_cards_leistungen() {
             </h2>
           </div>
           <br></br>
-          <p className="text-lg font-normal font-fredoka">
-          {Description2}
+          <p className="text-lg md:min-h-96 md:min-w-52 xl:min-h-48 font-normal font-fredoka">
+            {Description2}
           </p>
-          <br></br>
-          <br></br>
           <button className="">Mehr erfahren</button>
         </div>
       </div>
@@ -106,11 +99,9 @@ function Section_cards_leistungen() {
             </h2>
           </div>
           <br></br>
-          <p className="text-lg font-normal font-fredok">
+          <p className="text-lg md:min-h-96 md:min-w-52 xl:min-h-48 font-normal font-fredoka">
             {Description3}
           </p>
-          <br></br>
-          <br></br>
           <button className="">Mehr erfahren</button>
         </div>
       </div>
@@ -131,11 +122,9 @@ function Section_cards_leistungen() {
             </h2>
           </div>
           <br></br>
-          <p className="text-lg font-normal font-fredok">
+          <p className="text-lg md:min-h-96 md:min-w-52 xl:min-h-48 font-normal font-fredoka">
             {Description4}
           </p>
-          <br></br>
-          <br></br>
           <button className="">Mehr erfahren</button>
         </div>
       </div>
@@ -147,7 +136,7 @@ function Section_cards_leistungen() {
 
 
     {/* 5. box */}
-    <div className="flex flex-col w-full lg:flex-col rounded-3xl bg-paul-light-beige m-2 p-12 ">
+    {/* <div className="flex flex-col w-full lg:flex-col rounded-3xl bg-paul-light-beige m-2 p-12 ">
         <div className="flex flex-row md:flex-col items-start ">
         <div className="flex flex-row justify-start items-start ">
           <img className="w-1/3" src={Image5}></img>
@@ -169,8 +158,7 @@ function Section_cards_leistungen() {
           <br></br>
           <button className="">Mehr erfahren</button>
         </div>
-      </div>
-
+      </div> */}
 
 
       {/* left box */}
@@ -199,4 +187,4 @@ function Section_cards_leistungen() {
   )
 }
 
-export default Section_cards_leistungen
+export default Section_cards_energiekonzepte
