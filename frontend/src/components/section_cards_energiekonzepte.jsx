@@ -4,7 +4,7 @@ import Image1 from '/src/assets/images/original/card1.png'
 import Image2 from '/src/assets/images/original/card2.png'
 import Image3 from '/src/assets/images/original/card3.png'
 import Image4 from '/src/assets/images/original/card4.png'
-import Image5 from '/src/assets/images/original/logo_bg.svg'
+// import Image5 from '/src/assets/images/original/logo_bg.svg'
 
 
 // --- Text resources ---

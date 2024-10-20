@@ -3,7 +3,7 @@
 // --- Text resources ---
 
 // --- Image resources ---
-import Placeholder from '/src/assets/images/Placeholder.png'
+// import Placeholder from '/src/assets/images/Placeholder.png'
 import Image1 from '/src/assets/images/original/Fahrrad.jpg'
 
 function Section_team() {

@@ -51,7 +51,7 @@ function Navbar_xl_dropdown_energiekonzepte({ name }) {
 
         <div className="relative flex flex-row items-center justify-between nav-bg-color">
             <Link to="/Themenseite1">
-                <div className="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color">
+                <div className="font-fredoka text-xl font-medium menu-hover nav-text-color">
                     {name}
                 </div>
             </Link>

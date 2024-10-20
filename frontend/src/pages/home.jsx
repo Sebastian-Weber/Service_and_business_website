@@ -1,7 +1,7 @@
 
 import Footer from '../components/footer'
 import Section_intro from '../components/section_intro'
-import Section_cards_template from '../components/section_cards_template'
+// import Section_cards_template from '../components/section_cards_template'
 import Section_gallery from '../components/section_gallery'
 import Section_banner from '../components/section_banner'
 import Section_hero from '../components/section_hero'

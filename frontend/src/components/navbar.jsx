@@ -55,9 +55,9 @@ function Navbar() {
   return (
     <>
       {/* small */}
-      <div className="flex flex-row justify-between items-center absolute w-screen p-6 bg-paul-dark-violet">
+      <div className="flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
         <Link to="/" >
-          <img className="w-20 px-2" src={Firmenlogo} alt="Firmenlogo" onClick={closeOverlay} />
+          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" onClick={closeOverlay} />
         </Link>
 
         {/* Hamburger Menu Dropdown */}
@@ -155,9 +155,9 @@ function Navbar() {
       </div>
 
       {/* Medium */}
-      <div className="hidden md:flex flex-row justify-between items-center absolute w-screen p-6 bg-paul-dark-violet">
+      <div className="hidden md:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
         <Link to="/" onClick={closeOverlay}>
-          <img className="w-20 px-2" src={Firmenlogo} alt="Firmenlogo" />
+          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" />
         </Link>
 
         <div className="relative group cursor-pointer">
@@ -244,10 +244,10 @@ function Navbar() {
           </div>
   
           {/* large */}
-          <div className="hidden lg:flex flex-row justify-between items-center absolute w-screen p-6 bg-paul-dark-violet">
+          <div className="hidden lg:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
             
           <Link to="/" onClick={closeOverlay}>
-            <img className="w-20 px-2" src={Firmenlogo} alt="Firmenlogo" />
+            <img className="w-18 pl-6" src={Firmenlogo} alt="Firmenlogo" />
           </Link>
 
             <div className="flex flex-row items-center justify-end mx-2">
@@ -336,10 +336,10 @@ function Navbar() {
   
   
           {/* xl */}
-          <div className="hidden xl:flex flex-row justify-between items-center absolute w-screen p-6 bg-paul-dark-violet">
+          <div className="hidden xl:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
             <div className="flex flex-row justify-start items-center">
               <Link className="flex flex-row items-start" to="/" onClick={closeOverlay}>
-                <img className="w-20 px-2" src={Firmenlogo}></img>
+                <img className="w-18 pl-8" src={Firmenlogo}></img>
               </Link>
     
               <div className="flex flex-row justify-start items-center mx-4">
@@ -351,16 +351,16 @@ function Navbar() {
                   </div>
                 </Link>
 
-            {/* <Navbar_xl_dropdown_indoor></Navbar_xl_dropdown_indoor>
-            <Navbar_xl_dropdown_outdoor></Navbar_xl_dropdown_outdoor>
-            <Navbar_xl_dropdown_template></Navbar_xl_dropdown_template> */}
-            <Navbar_xl_dropdown_leistungen name="Leistungen"/>
-            <Navbar_xl_dropdown_energiekonzepte name="Energiekonzepte"/>
-            {/* <Navbar_xl_dropdown_template name="Navbar_xl_dropdown_template"/> */}
+                {/* <Navbar_xl_dropdown_indoor></Navbar_xl_dropdown_indoor>
+                <Navbar_xl_dropdown_outdoor></Navbar_xl_dropdown_outdoor>
+                <Navbar_xl_dropdown_template></Navbar_xl_dropdown_template> */}
+                <Navbar_xl_dropdown_leistungen name="Leistungen"/>
+                <Navbar_xl_dropdown_energiekonzepte name="Energiekonzepte"/>
+                {/* <Navbar_xl_dropdown_template name="Navbar_xl_dropdown_template"/> */}
 
 
               <Link className="flex flex-row items-start" to="/offene-stellen">
-                <div className="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color ">Jobs</div>
+                <div className="font-fredoka text-xl font-medium menu-hover  nav-text-color ">Jobs</div>
               </Link>
 
             </div>
