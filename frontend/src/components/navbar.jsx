@@ -15,7 +15,7 @@ import Phone from '/src/assets/Phone.svg'
 // PNGs
 
 // Subcomponents
-import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
+// import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
 import Navbar_xl_dropdown_leistungen from './navbar_xl_dropdown_leistungen.jsx';
 import Navbar_xl_dropdown_energiekonzepte from './navbar_xl_dropdown_energiekonzepte.jsx';
 
@@ -90,9 +90,9 @@ function Navbar() {
           </div>
 
           {/* Overlay menu */}
-          <div className={`py-6 px-6 fixed top-24 left-0 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
+          <div className={`fixed left-0 top-20 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
             <div className="flex flex-col justify-normal items-start">
-              <ul className="w-full nav-text-color mt-12">
+              <ul className="py-6 px-6 w-full nav-text-color mt-12">
 
                 <li className="">
                   <Link onClick={toggleOverlay} to="/ueber-uns">Über uns</Link>

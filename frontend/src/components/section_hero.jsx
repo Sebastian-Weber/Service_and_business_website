@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
 // --- Image resources ---
 
 //  PNGs
-import Hero_about from '/src/assets/images/hero-about.png';
+import Hero_about from '/src/assets/images/original/hero-about.png';
 
 import HeroLogo from '/src/assets/images/original/home-text.svg';
 import HeroHome from '/src/assets/images/original/hero-home.svg';

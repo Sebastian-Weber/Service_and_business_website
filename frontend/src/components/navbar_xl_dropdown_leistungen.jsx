@@ -42,7 +42,7 @@ const Navbar_XL_dropdown_items = [
      },
   ];
 
-
+// Props "Name" nicht löschen
 function Navbar_xl_dropdown_leistungen({ name }) {
   return (
     <>
@@ -64,7 +64,7 @@ function Navbar_xl_dropdown_leistungen({ name }) {
         </div>
 
         {/*  Overlay menu */}
-        <div className="left-0 py-6 px-12 invisible fixed w-full nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
+        <div className="left-0 top-20  py-6 px-12 invisible fixed w-full nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
             
             <div className="flex flex-row justify-evenly items-start">
 
@@ -102,23 +102,23 @@ function Navbar_xl_dropdown_leistungen({ name }) {
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                        <div className="max-w-56 max-h-72">
+                        <div key={index} className="max-w-56 max-h-72">
                             <img className="w-full h-full object-cover object-center aspect-auto" src={Dropdownitem.item_2_image}></img>
                             </div>
                         ))}
                     </Link>
                     <br></br>
                     <Link>
-                        <div class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
+                        <div className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
                             {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} class="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
+                            <div key={index} className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_2_heading}
                             </div>
                             ))}
                         </div>
                     </Link>
                     <Link>
-                        <div clasdiv classname="ck border-gray-100 font-semibold nav-text-color hover:opacity-50">
+                        <div className="ck border-gray-100 font-semibold nav-text-color hover:opacity-50">
                             {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
                             <div key={index} className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {Dropdownitem.item_2_subheading}
@@ -187,7 +187,7 @@ function Navbar_xl_dropdown_leistungen({ name }) {
                 </div>
 
                 {/* Menu item 5 */}
-                <div classname="flex flex-col justify-normal items-start px-6 max-w-72">
+                <div className="flex flex-col justify-normal items-start px-6 max-w-72">
                 <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
                         <div key={index} className="max-w-56 max-h-72">
