@@ -1,4 +1,3 @@
-import React from 'react'
 
 // --- Text resources ---
 
@@ -15,20 +14,17 @@ const intro = [
   },
 ];
 
-
-
 function Section_intro() {
   return (
     <>
-      <div class="flex flex-col relative justify-center items-center px-6 py-24 bg-white ">
+      <div className="flex flex-col relative justify-between px-4 md:px-24 py-24 bg-white">
 
-        <div class="flex flex-col justify-around items-center md:flex-row ">
+        <div className="flex flex-col justify-around lg:flex-row ">
 
           {/* left box */}
-          <div class="flex flex-col w-screen md:w-3/6 p-4 h-auto ">
+          <div className="flex flex-col w-full mr-2 md:w-3/6 h-auto">
+            <h2 className="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-light-purple">Paul & Team – Handwerk mit Herz</h2>
 
-            <div class=""></div>
-            <h2 class="text-3xl font-medium font-fredoka text-stone-700">Paul & Team – Handwerk mit Herz</h2>
             <br></br>
             <div>
               <p>
@@ -43,13 +39,15 @@ function Section_intro() {
                 Unser Ziel dabei: Zufriedene Kunden:innen, die wissen, dass sie uns vertrauen können. Deshalb haben wir an unsere Handwerksleistungen auch die höchsten Ansprüche in Sachen Qualität und Service. Und daran lassen wir uns gerne messen.
               </p>
               <br></br>
-              <button class="button hover:shadow-xl hover:shadow-stone-300 px-2">Mehr über uns erfahren</button>
+
+              <button className="button hover:shadow-xl hover:shadow-stone-300 px-2">Mehr über uns erfahren</button>
             </div>
-          </div>  
+          </div>
+          <br></br>
 
           {/* right box */}
-          <div class="flex flex-col text-xl justify-center items-center m-4 text-stone-700">
-            <img class="w-auto h-auto" src={Image1}></img>
+          <div className="flex flex-col text-xl justify-start items-start">
+            <img className="w-full h-auto" src={Image1}></img>
           </div>
         </div>
       </div> 

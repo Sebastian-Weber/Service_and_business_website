@@ -6,7 +6,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 /* Track */
@@ -16,7 +16,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #444;
+  background: #2E2936;
 }
 
 /* Handle on hover */
@@ -42,6 +42,8 @@
 :root {
 box-sizing: border-box;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #2E2936;
+font-size:larger;
 }
 
 .purple_light {
@@ -103,10 +105,8 @@ h1 {
   z-index: 1;
 } */
 
-.redunderline {
-  text-decoration-color: red;
-  text-decoration: underline;
-}
+
+
 
 button {
   border-radius: 6px;
