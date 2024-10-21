@@ -342,20 +342,27 @@ function Navbar() {
 
 
           </div> 
+
+
+
+
+
+
+
   
   
           {/* xl */}
-          <div className="hidden xl:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
+          <div className="absolute hidden xl:flex flex-row justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
             <div className="flex flex-row justify-start items-center">
               <Link className="flex flex-row items-start" to="/" onClick={closeOverlay}>
-                <img className="w-18 pl-8 z-10" src={Firmenlogo}></img>
+                <img className="ml-4 py-2" src={Firmenlogo}></img>
               </Link>
     
               <div className="flex flex-row justify-start items-center mx-4">
 
                 {/* Ueber uns  */}
                 <Link className="" to="/ueber-uns">
-                  <div className="font-fredoka text-xl font-medium menu-hover nav-text-color mx-4" onClick={closeOverlay}>
+                  <div className="font-fredoka text-xl font-medium menu-hover my-2 py-2 nav-text-color mx-2 p-2" onClick={closeOverlay}>
                     Über uns
                   </div>
                 </Link>
