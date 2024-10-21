@@ -6,7 +6,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 /* Track */
@@ -44,6 +44,10 @@ box-sizing: border-box;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: #2E2936;
 font-size:larger;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .purple_light {

@@ -9,7 +9,7 @@ import Image1 from '/src/assets/images/original/home-form.jpg'
 function Section_contact() {
   return (
     <>
-      <div className="flex flex-col relative justify-between px-4 md:px-24 py-24 bg-paul-light-rose">
+      <div className="flex flex-col relative justify-between px-4 md:px-12 py-24 bg-paul-light-rose">
 
         <div className="flex flex-col md:px-12 lg:flex-row ">
 

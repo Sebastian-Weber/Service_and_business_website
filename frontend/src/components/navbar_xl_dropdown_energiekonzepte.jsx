@@ -41,7 +41,7 @@ const Navbar_XL_dropdown_items = [
      },
   ];
 
-
+// Props "Name" nicht löschen
 function Navbar_xl_dropdown_energiekonzepte({ name }) {
   return (
     <>
@@ -64,7 +64,7 @@ function Navbar_xl_dropdown_energiekonzepte({ name }) {
         </div>
 
         {/*  Overlay menu */}
-        <div className="left-0 py-6 px-12 invisible fixed w-full nav-bg-color items-center justify-start text-gray-800 group-hover:visible">
+        <div className="left-0 top-20 py-6 px-12 invisible fixed w-full nav-bg-color items-center justify-start  text-gray-800 group-hover:visible">
             
             <div className="flex flex-row justify-evenly items-start">
 

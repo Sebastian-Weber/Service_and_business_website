@@ -9,7 +9,7 @@ import Image1 from '/src/assets/images/original/Fahrrad.jpg'
 function Section_team() {
   return (
     <>
-      <div className="flex flex-col relative justify-center items-center w-screen h-fit px-4 py-24 md:px-24 bg-paul-green ">
+      <div className="flex flex-col relative justify-center items-center w-screen h-fit px-4 py-24 md:px-10 bg-paul-green ">
 
         <div className="flex flex-col justify-around items-center md:px-12 md:flex-row ">
 

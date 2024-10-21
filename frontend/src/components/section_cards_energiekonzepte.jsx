@@ -27,7 +27,7 @@ const Description4 ='Solarthermie nutzt Sonnenlicht zur umweltfreundlichen Wärm
 function Section_cards_energiekonzepte() {
   return (
     <>
-    <div className="flex flex-col justify-center relative items-center py-16 md:px-24 bg-white ">
+    <div className="flex flex-col justify-center relative items-center py-16 md:px-10 bg-white ">
 
     {/* first row */}
     <div className="flex flex-col justify-around items-center md:px-12 md:flex-row">

@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
 // --- Image resources ---
 
 //  PNGs
-import Hero_about from '/src/assets/images/hero-about.png';
+import Hero_about from '/src/assets/images/original/hero-about.png';
 
 import HeroLogo from '/src/assets/images/original/home-text.svg';
 import HeroHome from '/src/assets/images/original/hero-home.svg';
@@ -30,39 +30,42 @@ function Section_hero() {
 
   return (
     <>
-      <div className="flex flex-col h-fit justify-center items-center lg:flex-row lg:justify-center lg:items-end lg:h-screen bg-paul-light-green">
-
-      {/* left box */}
-        <div className="flex flex-col justify-center items-center py-36 pt-24 md:h-full">
+      <div className="flex flex-col justify-around w-screen md:flex-row mt-16 bg-paul-light-green">
+      <div className="flex flex-col justify-center items-center md:w-1/2">
 
           {/* Left box - text + image */}
-          <div className="flex flex-col h-fit w-3/4 m-2">
-              <img className="" src={HeroLogo} alt="Hero Logo" />
+ 
+            <div className='m-10 md:mx-20'>
+              <img className="flex flex-row w-auto" src={HeroLogo} alt="Hero Logo" />
               <br></br>
-              <div className="font-fredoka text-2xl ">
+              <div className="font-fredoka text-2xl">
                 Ihre Adresse für Badsanierung, Heizungssanierung, Klimaanlagen und Elektroinstallationen rund um Köln.
               </div>
-              <br></br>
             </div>
-          </div>
+
+            </div>
+
+            <br></br>
 
         {/* Right box - image */}
-        <div className="flex flex-row justify-end items-end ">
-          {/* image cog wheel */}
+        <div className="w-fit pt-8">
+
           <img
             ref={heroHomeRef}
-            className=" "
+            className="absolute"
             src={HeroHome}
             alt="Hero Home"
           />
-          {/* image front */}
-          <img
-            className="absolute h-full pt-28 right-6"
+
+
+        </div>
+
+        <img
+            className="relative pt-12"
             src={HeroImg1}
             alt="Hero Image 1"
           />
 
-        </div>
 
       </div>
     </>

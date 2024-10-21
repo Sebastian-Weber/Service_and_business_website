@@ -15,7 +15,7 @@ import Phone from '/src/assets/Phone.svg'
 // PNGs
 
 // Subcomponents
-import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
+// import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
 import Navbar_xl_dropdown_leistungen from './navbar_xl_dropdown_leistungen.jsx';
 import Navbar_xl_dropdown_energiekonzepte from './navbar_xl_dropdown_energiekonzepte.jsx';
 
@@ -72,27 +72,36 @@ function Navbar() {
           
               <div className="mr-6 cursor-pointer"  >
                 {/* Hamburger Icon WIP*/}
-                <div className="bg-white w-8 h-1 rounded abolute top-4 -mt-0.5 
-                    before:content-['']
-                  before:bg-white
-                    before:w-8 
-                    before:h-1 
-                    before:rounded 
-                    before:absolute 
-                    before:transition-all 
-                    before:duration-500 
-                    before:translate-x-4 
-                    before:translate-y-3" onClick={toggleOverlay} 
-                    alt="Hamburger Menu" >
+                <div className="
+                  absolute top-4 -mt-0.5 transition-all duration-500 before: content-['']
+                  before: bg-white before: w-8 before: h-1 before: rounded before:absolute
+                  before: -translate-x-4
+                  before: -translate-y-3
+                  before:transition-all
+                  before:duration-500
+                  after:content-['']
+                  lafter:bg-white
+                  after:w-8 after:h-1 after:rounded
+                  after:absolute
+                  after:-translate-x-4
+                  after:translate-y-3
+                  after:transition-all
+                  after:duration-500"
+                  onClick={toggleOverlay} 
+                  alt="Hamburger Menu" >
+                </div>
+
+
+
                 </div>
             </div>
 
           </div>
 
           {/* Overlay menu */}
-          <div className={`py-6 px-6 fixed top-24 left-0 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
+          <div className={`fixed left-0 top-20 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
             <div className="flex flex-col justify-normal items-start">
-              <ul className="w-full nav-text-color mt-12">
+              <ul className="py-6 px-6 w-full nav-text-color mt-12">
 
                 <li className="">
                   <Link onClick={toggleOverlay} to="/ueber-uns">Über uns</Link>
@@ -152,7 +161,7 @@ function Navbar() {
 
         </div>
 
-      </div>
+
 
       {/* Medium */}
       <div className="hidden md:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
@@ -339,7 +348,7 @@ function Navbar() {
           <div className="hidden xl:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
             <div className="flex flex-row justify-start items-center">
               <Link className="flex flex-row items-start" to="/" onClick={closeOverlay}>
-                <img className="w-18 pl-8" src={Firmenlogo}></img>
+                <img className="w-18 pl-8 z-10" src={Firmenlogo}></img>
               </Link>
     
               <div className="flex flex-row justify-start items-center mx-4">
