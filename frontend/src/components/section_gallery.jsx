@@ -51,7 +51,7 @@ function Section_gallery() {
 
         </div> */}
 
-        <div className="mx-6 my-32 md:mx-28 md:px-12 w-screen">
+        <div className="mx-6 my-32  md:px-20 w-screen">
 
           <div className="flex flex-row">
 

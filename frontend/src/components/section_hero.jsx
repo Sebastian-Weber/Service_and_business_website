@@ -30,24 +30,23 @@ function Section_hero() {
 
   return (
     <>
-      <div className="flex flex-col justify-around w-screen  md:flex-row mt-16 bg-paul-light-green">
-      <div className="flex flex-col justify-center items-center m-6 md:w-1/3">
+      <div className="flex flex-col justify-around w-screen md:flex-row mt-16 bg-paul-light-green">
+      <div className="flex flex-col justify-center items-center md:w-1/2">
 
           {/* Left box - text + image */}
-           <div className="">
-            <div className="">
-              <img className="" src={HeroLogo} alt="Hero Logo" />
+ 
+            <div className='m-10 md:mx-20'>
+              <img className="flex flex-row w-auto" src={HeroLogo} alt="Hero Logo" />
               <br></br>
-              <div className="font-fredoka text-2xl ">
+              <div className="font-fredoka text-2xl">
                 Ihre Adresse für Badsanierung, Heizungssanierung, Klimaanlagen und Elektroinstallationen rund um Köln.
               </div>
+            </div>
 
             </div>
 
             <br></br>
-          </div> 
 
-          </div>
         {/* Right box - image */}
         <div className="w-fit pt-8">
 

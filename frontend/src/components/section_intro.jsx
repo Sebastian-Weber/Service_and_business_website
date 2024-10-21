@@ -17,7 +17,7 @@ const intro = [
 function Section_intro() {
   return (
     <>
-      <div className="flex flex-col relative justify-between px-4 md:px-24 py-24 bg-white">
+      <div className="flex flex-col relative justify-between px-4 md:px-20 py-24 bg-white">
 
         <div className="flex flex-col justify-around lg:flex-row ">
 
