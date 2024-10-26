@@ -14,14 +14,11 @@ import Phone from '/src/assets/Phone.svg'
 
 // PNGs
 
-// Subcomponents
+// Components
 // import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
-import Navbar_xl_dropdown_leistungen from './navbar_xl_dropdown_leistungen.jsx';
-import Navbar_xl_dropdown_energiekonzepte from './navbar_xl_dropdown_energiekonzepte.jsx';
-
-
-
-
+import Navbar_xl_dropdown_leistungen from './dropdowns/navbar_xl_dropdown_leistungen.jsx';
+import Navbar_xl_dropdown_energiekonzepte from './dropdowns/navbar_xl_dropdown_energiekonzepte.jsx';
+import Button_primary from './buttons/button_primary.jsx';
 
 
 
@@ -52,51 +49,53 @@ function Navbar() {
     setEnergiekonzepteExpanderVisible(!isEnergiekonzepteExpanderVisible);
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+  const genericHamburgerLine = `h-0.5 w-8 my-1 mr-6 rounded-full bg-paul-light-beige transition ease transform duration-300`;
+
+  
+
+
   return (
     <>
       {/* small */}
       <div className="flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
+        
         <Link to="/" >
-          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" onClick={closeOverlay} />
+          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo"
+           onClick={() => { setIsOpen(!setIsOpen); closeOverlay(!setOverlayVisible); }}></img>
         </Link>
 
         {/* Hamburger Menu Dropdown */}
-        <div className="relative group cursor-pointer">
-          <div className="relative flex flex-row items-center justify-between nav-bg-color my-2">
-            <div className="mr-6 cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
-          
-              {/* Hamburger Icon*/}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#FBEBC0" viewBox="0 0 24 24" strokeWidth={1} stroke="#FBEBC0" className="w-8 h-auto scale-150 -pt-2 -ml-2 hover:rotate-180" onClick={toggleOverlay}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-          
-              <div className="mr-6 cursor-pointer"  >
-                {/* Hamburger Icon WIP*/}
-                <div className="
-                  absolute top-4 -mt-0.5 transition-all duration-500 before: content-['']
-                  before: bg-white before: w-8 before: h-1 before: rounded before:absolute
-                  before: -translate-x-4
-                  before: -translate-y-3
-                  before:transition-all
-                  before:duration-500
-                  after:content-['']
-                  lafter:bg-white
-                  after:w-8 after:h-1 after:rounded
-                  after:absolute
-                  after:-translate-x-4
-                  after:translate-y-3
-                  after:transition-all
-                  after:duration-500"
-                  onClick={toggleOverlay} 
-                  alt="Hamburger Menu" >
-                </div>
+        {/* <div className="relative mx-6 group cursor-pointer">
+          <img className="cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
+        </div> */}
 
+          <button
+            className="flex flex-col rounded justify-center items-center group"
+            onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }} 
+          >
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "rotate-45 translate-y-2 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen ? "opacity-0" : "group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+          </button>
 
-
-                </div>
-            </div>
-
-          </div>
+      </div>
 
           {/* Overlay menu */}
           <div className={`fixed left-0 top-20 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
@@ -159,28 +158,48 @@ function Navbar() {
             </div>
           </div>
 
-        </div>
+
 
 
 
       {/* Medium */}
       <div className="hidden md:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
-        <Link to="/" onClick={closeOverlay}>
-          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" />
+      
+      <Link to="/" >
+          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo"
+           onClick={() => { setIsOpen(!setIsOpen); closeOverlay(!setOverlayVisible); }}></img>
         </Link>
 
         <div className="relative group cursor-pointer">
 
           <div className="flex flex-row items-center justify-end mx-2">
 
-            <button className="nav-button-color nav-button-text-color mr-6 hover:opacity-50 transition ease-in-out delay-150">
-              Kontakt
-            </button>
+          <button className="bg-paul-light-beige font-semibold text-sm px-4 mx-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
 
-            {/* Hamburger Menu Dropdown */}
-            <div className="relative flex flex-row items-center justify-between">
-              <img className="mr-6 cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
-            </div>
+          <button
+            className="flex flex-col rounded justify-center items-center group"
+            onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }} 
+          >
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "rotate-45 translate-y-2 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen ? "opacity-0" : "group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+          </button>
 
           </div>
           
@@ -255,8 +274,9 @@ function Navbar() {
           {/* large */}
           <div className="hidden lg:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
             
-          <Link to="/" onClick={closeOverlay}>
-            <img className="w-18 pl-6" src={Firmenlogo} alt="Firmenlogo" />
+          <Link to="/" >
+            <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo"
+             onClick={() => { setIsOpen(!setIsOpen); closeOverlay(!setOverlayVisible); }}></img>
           </Link>
 
             <div className="flex flex-row items-center justify-end mx-2">
@@ -264,21 +284,43 @@ function Navbar() {
                 <img className="mx-1" src={Phone}></img>
                 <span className="text-xl mr-4 nav-text-color">+49 12345 6789</span>
               </div>
-              <button className="nav-button-color nav-button-text-color mr-6 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
+              <button className="bg-paul-light-beige font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
             
+        {/* Hamburger Menu Dropdown */}
+
+        
 
 
               {/* Hamburger Menu Dropdown */}
-              <div className="relative group cursor-pointer">
-                <div className="relative flex flex-row items-center justify-between bg-paul-dark-violet">
-                  <img className="mr-6 cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
-                
-
-                </div>
+              <div className="relative mx-6 group cursor-pointer">
+              <button
+            className="flex flex-col rounded justify-center items-center group"
+            onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }} 
+          >
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "rotate-45 translate-y-2 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen ? "opacity-0" : "group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+          </button>
 
                 {/* Overlay menu */}
                 <div className={`py-6 px-6 fixed top-24 left-0 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
-              <div className="flex flex-col justify-normal items-start">
+                <div className="flex flex-col justify-normal items-start">
                 <ul className="w-full nav-text-color mt-12">
 
 
@@ -352,11 +394,12 @@ function Navbar() {
   
   
           {/* xl */}
-          <div className="absolute hidden xl:flex flex-row justify-between items-center t-0 py-4 w-screen nav-bg-color px-6">
+          <div className="absolute hidden xl:flex flex-row justify-between items-center  t-0 py-4 w-screen nav-bg-color px-6">
             <div className="flex flex-row justify-start items-center">
-              <Link className="flex flex-row items-start" to="/" onClick={closeOverlay}>
-                <img className="ml-4 py-2" src={Firmenlogo}></img>
-              </Link>
+
+            <Link to="/" >
+              <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }}></img>
+            </Link>
     
               <div className="flex flex-row justify-start items-center mx-4">
 
@@ -370,8 +413,8 @@ function Navbar() {
                 {/* <Navbar_xl_dropdown_indoor></Navbar_xl_dropdown_indoor>
                 <Navbar_xl_dropdown_outdoor></Navbar_xl_dropdown_outdoor>
                 <Navbar_xl_dropdown_template></Navbar_xl_dropdown_template> */}
-                <Navbar_xl_dropdown_leistungen name="Leistungen"/>
-                <Navbar_xl_dropdown_energiekonzepte name="Energiekonzepte"/>
+                <Navbar_xl_dropdown_leistungen caption="Leistungen"/>
+                <Navbar_xl_dropdown_energiekonzepte caption="Energiekonzepte"/>
                 {/* <Navbar_xl_dropdown_template name="Navbar_xl_dropdown_template"/> */}
 
 
@@ -388,7 +431,11 @@ function Navbar() {
               <img className="" src={Phone}></img>
               <span className="text-xl mr-4 nav-text-color">+49 12345 6789</span>
             </div>
-            <button className="nav-button-color nav-button-text-color mr-6 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
+            {/* <button className="custom-button-primary">Kontakt</button> */}
+            <Button_primary caption="Kontakt"/>
+
+    
+
           </div>
 
         </div> 

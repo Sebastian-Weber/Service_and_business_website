@@ -28,8 +28,7 @@ function Footer() {
           <li className="font-fredoka text-xl font-medium py-2">Facebook
           </li>
           <li className="text-xl font-medium py-2">
-            <button className="nav-button-color nav-button-text-color hover:opacity-50 transition ease-in-out delay-150">Kontakt
-            </button>
+          <button className="bg-paul-light-beige text-paul-dark-violet font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
           </li>
         </ul>
       </div>
@@ -54,8 +53,7 @@ function Footer() {
               <li className="font-fredoka text-xl font-medium px-4 mx-4">Facebook
               </li>
               <li className="">
-                <button className="nav-button-color nav-button-text-color hover:opacity-50 transition ease-in-out delay-150">Kontakt
-                </button>
+              <button className="bg-paul-light-beige text-paul-dark-violet font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
               </li>
             </ul>
           </div>

@@ -31,21 +31,19 @@ function Section_hero() {
   return (
     <>
       <div className="flex flex-col justify-around w-screen md:flex-row mt-16 bg-paul-light-green">
-      <div className="flex flex-col justify-center items-center md:w-1/2">
+        <div className="flex flex-col justify-center items-center md:w-1/2">
 
           {/* Left box - text + image */}
- 
-            <div className='m-10 md:mx-20'>
-              <img className="flex flex-row w-auto" src={HeroLogo} alt="Hero Logo" />
-              <br></br>
-              <div className="font-fredoka text-2xl">
-                Ihre Adresse für Badsanierung, Heizungssanierung, Klimaanlagen und Elektroinstallationen rund um Köln.
-              </div>
-            </div>
-
-            </div>
-
+          <div className='m-10 md:mx-20'>
+            <img className="flex flex-row w-auto" src={HeroLogo} alt="Hero Logo" />
             <br></br>
+            <div className="font-fredoka text-2xl">
+               Ihre Adresse für Badsanierung, Heizungssanierung, Klimaanlagen und Elektroinstallationen rund um Köln.
+            </div>
+          </div>
+
+        </div>
+        <br></br>
 
         {/* Right box - image */}
         <div className="w-fit pt-8">
@@ -57,7 +55,6 @@ function Section_hero() {
             alt="Hero Home"
           />
 
-
         </div>
 
         <img
@@ -65,8 +62,7 @@ function Section_hero() {
             src={HeroImg1}
             alt="Hero Image 1"
           />
-
-
+          
       </div>
     </>
   );

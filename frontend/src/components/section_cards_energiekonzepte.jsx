@@ -1,9 +1,10 @@
 
 // --- Image resources ---
-import Image1 from '/src/assets/images/original/card1.png'
+import Button_secondary from './buttons/button_secondary';
+import Image1 from '/src/assets/images/original/pumpe.png' 
 import Image2 from '/src/assets/images/original/card2.png'
 import Image3 from '/src/assets/images/original/card3.png'
-import Image4 from '/src/assets/images/original/card4.png'
+import Image4 from '/src/assets/images/original/solarthermie-anlage.png'
 // import Image5 from '/src/assets/images/original/logo_bg.svg'
 
 
@@ -27,16 +28,18 @@ const Description4 ='Solarthermie nutzt Sonnenlicht zur umweltfreundlichen Wärm
 function Section_cards_energiekonzepte() {
   return (
     <>
-    <div className="flex flex-col justify-center relative items-center py-16 md:px-10 bg-white ">
+    <div className="flex flex-col justify-center items-center relative px-4 h-fit py-16 md:px-20  bg-white ">
 
-    {/* first row */}
-    <div className="flex flex-col justify-around items-center md:px-12 md:flex-row">
+    <div className='grid'>
 
       {/* 1. box */}
-      <div className="flex flex-col lg:w-2/3 lg:flex-col rounded-3xl bg-paul-light-beige m-2 p-12 ">
+      <div className="flex flex-col m-2 p-12 rounded-3xl bg-paul-light-beige ">
         <div className="flex flex-row md:flex-col items-start ">
         <div className="flex flex-row justify-start items-start ">
-          <img className="w-full" src={Image1}></img>
+
+        <div className="flex w-fit pt-8">
+          <img className="relative w-2/5 right-0" src={Image1}></img>
+          </div>
           <br></br>
         </div>
         <br></br>
@@ -48,18 +51,25 @@ function Section_cards_energiekonzepte() {
             </h2>
           </div>
           <br></br>
-          <p className="text-lg md:min-h-96 md:min-w-52 xl:min-h-48 font-normal font-fredoka">
-            {Description1}
+          <p className="text-lg font-normal font-fredoka">
+          {Description1}
           </p>
-          <button className="">Mehr erfahren</button>
+          <br></br>
+          <br></br>
+          <Button_secondary caption="Mehr erfahren"/>
         </div>
       </div>
 
+    </div>
+
+
+    <div className='grid lg:grid-cols-2 gap-2'>
+
       {/* 2. box */}
-      <div className="flex flex-col lg:w-2/3 lg:flex-col rounded-3xl bg-paul-light-green m-2 p-12 ">
+      <div className="flex flex-col m-2 p-12 rounded-3xl bg-paul-light-green">
         <div className="flex flex-row md:flex-col items-start">
         <div className="flex flex-row justify-start items-start ">
-          <img className="w-full" src={Image2}></img>
+          {/* <img className="w-full" src={Image2}></img> */}
           <br></br>
         </div>
         <br></br>
@@ -71,23 +81,21 @@ function Section_cards_energiekonzepte() {
             </h2>
           </div>
           <br></br>
-          <p className="text-lg md:min-h-96 md:min-w-52 xl:min-h-48 font-normal font-fredoka">
-            {Description2}
+          <p className="text-lg font-normal font-fredoka">
+          {Description2}
           </p>
-          <button className="">Mehr erfahren</button>
+          <br></br>
+          <br></br>
+          <Button_secondary caption="Mehr erfahren"/>
         </div>
       </div>
 
-    </div>
 
-    {/* second row */}
-    <div className="flex flex-col justify-around items-center md:px-12 md:flex-row">
-
-      {/* 3. box */}
-      <div className="flex flex-col lg:w-2/3 lg:flex-col rounded-3xl bg-paul-light-rose m-2 p-12 ">
+        {/* 3. box */}
+        <div className="flex flex-col m-2 p-12 rounded-3xl bg-paul-light-rose">
         <div className="flex flex-row md:flex-col items-start ">
         <div className="flex flex-row justify-start items-start ">
-          <img className="w-full" src={Image3}></img>
+          {/* <img className="w-full" src={Image3}></img> */}
           <br></br>
         </div>
         <br></br>
@@ -99,89 +107,47 @@ function Section_cards_energiekonzepte() {
             </h2>
           </div>
           <br></br>
-          <p className="text-lg md:min-h-96 md:min-w-52 xl:min-h-48 font-normal font-fredoka">
+          <p className="text-lg font-normal font-fredok">
             {Description3}
           </p>
-          <button className="">Mehr erfahren</button>
+          <br></br>
+          <br></br>
+          <Button_secondary caption="Mehr erfahren"/>
         </div>
       </div>
 
-    {/* 4. box */}
-    <div className="flex flex-col lg:w-2/3 lg:flex-col rounded-3xl bg-paul-light-purple m-2 p-12 ">
-        <div className="flex flex-row md:flex-col items-start ">
-        <div className="flex flex-row justify-start items-start ">
-          <img className="w-full" src={Image4}></img>
-          <br></br>
-        </div>
-        <br></br>
-        </div>
-        <div className="w-fit">
-          <div>
-            <h2 className="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-dark-purple">
-              {Headline4}
-            </h2>
-          </div>
-          <br></br>
-          <p className="text-lg md:min-h-96 md:min-w-52 xl:min-h-48 font-normal font-fredoka">
-            {Description4}
-          </p>
-          <button className="">Mehr erfahren</button>
-        </div>
       </div>
 
+      <div className='grid'>
+
+
+{/* 1. box */}
+<div className="flex flex-col m-2 p-12 rounded-3xl bg-paul-light-beige ">
+  <div className="flex flex-row md:flex-col items-start ">
+  <div className="flex flex-row justify-start items-start ">
+    <img className="w-full" src={Image4}></img>
+    <br></br>
+  </div>
+  <br></br>
+  </div>
+  <div className="w-fit">
+    <div>
+      <h2 className="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-dark-beige">
+        {Headline4}
+      </h2>
     </div>
+    <br></br>
+    <p className="text-lg font-normal font-fredoka">
+    {Description4}
+    </p>
+    <br></br>
+    <br></br>
+    <Button_secondary caption="Mehr erfahren"/>
+  </div>
+</div>
 
-    {/* third row */}
-    <div className="flex flex-row  justify-start items-start md:px-12 md:flex-row">
+</div>
 
-
-    {/* 5. box */}
-    {/* <div className="flex flex-col w-full lg:flex-col rounded-3xl bg-paul-light-beige m-2 p-12 ">
-        <div className="flex flex-row md:flex-col items-start ">
-        <div className="flex flex-row justify-start items-start ">
-          <img className="w-1/3" src={Image5}></img>
-          <br></br>
-        </div>
-        <br></br>
-        </div>
-        <div className="w-fit">
-          <div>
-          <h2 className="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-dark-beige">
-              {Headline5}
-            </h2>
-          </div>
-          <br></br>
-            <p className="text-lg font-normal font-fredok">
-              {Description5}
-            </p>
-          <br></br>
-          <br></br>
-          <button className="">Mehr erfahren</button>
-        </div>
-      </div> */}
-
-
-      {/* left box */}
-      {/* <div className="flex flex-col w-fit h-auto rounded-3xl bg-orange-200 m-4 p-12">
-      <div className="flex flex-row justify-start items-start lg:justify-end lg:items-end">
-      <img className="w-4/12" src={Placeholder}></img>
-      <br></br>
-      </div>
-        <h2 className="text-2xl font-medium font-fredoka text-stone-700">
-          Badsanierung
-        </h2>
-        <br></br>
-        <div>
-          <p className="text-lg font-normal font-fredoka text-stone-700">
-          Von der Installation bis zur Renovierung, planen Sie individuell mit unserem 3D-Programm und genießen Sie barrierefreie Gestaltung. Perfektion in jedem Detail – von Sanitäranlagen bis Fliesenverlegung.
-          </p>
-          <br></br>
-          <br></br>
-          <button className="">Mehr erfahren</button>
-        </div>
-      </div> */}
-
-    </div> 
   </div>
   </>
   )
