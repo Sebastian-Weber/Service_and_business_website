@@ -23,8 +23,6 @@ import Button_primary from './buttons/button_primary.jsx';
 
 
 
-
-
 function Navbar() {
   const [isOverlayVisible, setOverlayVisible] = useState(false);
   const toggleOverlay = () => {
@@ -51,6 +49,11 @@ function Navbar() {
     setEnergiekonzepteExpanderVisible(!isEnergiekonzepteExpanderVisible);
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+  const genericHamburgerLine = `h-0.5 w-8 my-1 mr-6 rounded-full bg-paul-light-beige transition ease transform duration-300`;
+
+  
+
 
   return (
     <>
@@ -58,41 +61,39 @@ function Navbar() {
       <div className="flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
         
         <Link to="/" >
-          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" onClick={closeOverlay} />
+          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo"
+           onClick={() => { setIsOpen(!setIsOpen); closeOverlay(!setOverlayVisible); }}></img>
         </Link>
 
         {/* Hamburger Menu Dropdown */}
-        <div className="relative mx-6 group cursor-pointer">
+        {/* <div className="relative mx-6 group cursor-pointer">
           <img className="cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
-        </div>
+        </div> */}
 
-       {/* Hamburger Icon WIP*/}
-       {/* <button id="hamburger-btn" className="text-3x1 md:hidden cursor-pointer relative w-8 h-8" alt="Hamburger overlay menu"
-                      onClick={toggleOverlay}>
-
-                    <div className=" bg-paul-light-beige w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 
-                      before:content-['']
-                      before:bg-paul-light-beige
-                      before:w-8 
-                      before:h-1 
-                      before:rounded 
-                      before:absolute
-                      before:-translate-x-4
-                      before:-translate-y-3
-                      before:transition-all
-                      before:duration-500
-                      after:content-['']
-                      after:bg-paul-light-beige
-                      after:w-8 
-                      after:h-1
-                      after:rounded
-                      after:absolute
-                      after:-translate-x-4
-                      after:translate-y-3
-                      after:transition-all
-                      after:duration-500">
-                    </div>
-                    </button> */}
+          <button
+            className="flex flex-col rounded justify-center items-center group"
+            onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }} 
+          >
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "rotate-45 translate-y-2 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen ? "opacity-0" : "group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+          </button>
 
       </div>
 
@@ -163,20 +164,42 @@ function Navbar() {
 
       {/* Medium */}
       <div className="hidden md:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
-        <Link to="/" onClick={closeOverlay}>
-          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" />
+      
+      <Link to="/" >
+          <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo"
+           onClick={() => { setIsOpen(!setIsOpen); closeOverlay(!setOverlayVisible); }}></img>
         </Link>
 
         <div className="relative group cursor-pointer">
 
           <div className="flex flex-row items-center justify-end mx-2">
 
-          <button className="bg-paul-light-beige font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
+          <button className="bg-paul-light-beige font-semibold text-sm px-4 mx-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
 
-        {/* Hamburger Menu Dropdown */}
-        <div className="relative mx-6 group cursor-pointer">
-          <img className="cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
-        </div>
+          <button
+            className="flex flex-col rounded justify-center items-center group"
+            onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }} 
+          >
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "rotate-45 translate-y-2 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen ? "opacity-0" : "group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+          </button>
 
           </div>
           
@@ -251,8 +274,9 @@ function Navbar() {
           {/* large */}
           <div className="hidden lg:flex flex-row justify-between items-center absolute w-screen py-5 bg-paul-dark-violet">
             
-          <Link to="/" onClick={closeOverlay}>
-            <img className="w-18 pl-6" src={Firmenlogo} alt="Firmenlogo" />
+          <Link to="/" >
+            <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo"
+             onClick={() => { setIsOpen(!setIsOpen); closeOverlay(!setOverlayVisible); }}></img>
           </Link>
 
             <div className="flex flex-row items-center justify-end mx-2">
@@ -269,9 +293,30 @@ function Navbar() {
 
               {/* Hamburger Menu Dropdown */}
               <div className="relative mx-6 group cursor-pointer">
-                <div className="relative flex flex-row items-center justify-between bg-paul-dark-violet">
-                  <img className="cursor-pointer" src={Hamburger} alt="Hamburger Menu" onClick={toggleOverlay} />
-                </div>
+              <button
+            className="flex flex-col rounded justify-center items-center group"
+            onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }} 
+          >
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "rotate-45 translate-y-2 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen ? "opacity-0" : "group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
+                  : "opacity-100 group-hover:opacity-100"
+              }`}
+            />
+          </button>
 
                 {/* Overlay menu */}
                 <div className={`py-6 px-6 fixed top-24 left-0 w-full h-full nav-bg-color items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
@@ -351,9 +396,10 @@ function Navbar() {
           {/* xl */}
           <div className="absolute hidden xl:flex flex-row justify-between items-center  t-0 py-4 w-screen nav-bg-color px-6">
             <div className="flex flex-row justify-start items-center">
-              <Link className="flex flex-row items-start" to="/" onClick={closeOverlay}>
-                <img className="ml-4 py-2" src={Firmenlogo}></img>
-              </Link>
+
+            <Link to="/" >
+              <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }}></img>
+            </Link>
     
               <div className="flex flex-row justify-start items-center mx-4">
 
