@@ -1,6 +1,4 @@
 import React from 'react'
-import Herosection from './herosection'
-import Introsection from './introsection'
 import Home from '../pages/home'
 
 
