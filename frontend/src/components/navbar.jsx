@@ -398,8 +398,9 @@ function Navbar() {
             <div className="flex flex-row justify-start items-center">
 
             <Link to="/" >
-              <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo" onClick={() => { setIsOpen(!isOpen); toggleOverlay(!setOverlayVisible); }}></img>
-            </Link>
+            <img className="w-18 pl-4" src={Firmenlogo} alt="Firmenlogo"
+             onClick={() => { setIsOpen(!setIsOpen); closeOverlay(!setOverlayVisible); }}></img>
+          </Link>
     
               <div className="flex flex-row justify-start items-center mx-4">
 
