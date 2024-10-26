@@ -2,19 +2,18 @@
 // --- Text resources ---
 
 // --- Image resources ---
-import Button_primary from './buttons/button_primary';
 import Button_secondary from './buttons/button_secondary';
-import Placeholder from '/src/assets/images/Placeholder.png'
+// import Placeholder from '/src/assets/images/Placeholder.png'
 import Image1 from '/src/assets/images/original/Desk.jpg'
 
 
 
-const intro = [
-  // Item 1
-  {
-  intro_image1: Placeholder,
-  },
-];
+// const intro = [
+//   // Item 1
+//   {
+//   intro_image1: Placeholder,
+//   },
+// ];
 
 function Section_intro() {
   return (

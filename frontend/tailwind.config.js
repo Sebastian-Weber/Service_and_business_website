@@ -74,8 +74,8 @@ module.exports = {
           },
         },
         '.custom-button-secondary': {
-          'background-color': '#423E4A', // paul-dark-button-bg
-          'color': '#FFF8ED', // button text color
+          'background-color': '#2E2936', // paul-dark-button-bg
+          'color': '#FFFFFF', // button text color
           'font-weight': '600', // font-semibold
           'font-size': '0.875rem', // text-sm
           'padding-left': '1rem', // px-4

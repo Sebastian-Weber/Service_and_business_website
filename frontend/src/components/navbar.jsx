@@ -14,11 +14,12 @@ import Phone from '/src/assets/Phone.svg'
 
 // PNGs
 
-// Subcomponents
+// Components
 // import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
-import Navbar_xl_dropdown_leistungen from './navbar_xl_dropdown_leistungen.jsx';
-import Navbar_xl_dropdown_energiekonzepte from './navbar_xl_dropdown_energiekonzepte.jsx';
+import Navbar_xl_dropdown_leistungen from './dropdowns/navbar_xl_dropdown_leistungen.jsx';
+import Navbar_xl_dropdown_energiekonzepte from './dropdowns/navbar_xl_dropdown_energiekonzepte.jsx';
 import Button_primary from './buttons/button_primary.jsx';
+
 
 
 
