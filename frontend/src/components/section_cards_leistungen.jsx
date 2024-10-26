@@ -56,7 +56,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -81,7 +81,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -111,7 +111,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -136,7 +136,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -167,7 +167,7 @@ function Section_cards_leistungen() {
             </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -189,7 +189,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+                    <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div> */}
 
@@ -218,7 +218,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <button className="bg-paul-dark-violet text-paul-light-beige font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -243,7 +243,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <button className="bg-paul-dark-violet text-paul-light-beige font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -268,7 +268,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+            <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -293,7 +293,7 @@ function Section_cards_leistungen() {
           </p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
         </div>
       </div>
 
@@ -326,7 +326,7 @@ function Section_cards_leistungen() {
         </p>
       <br></br>
       <br></br>
-      <button className="">Mehr erfahren</button>
+      <button className="bg-paul-dark-violet text-paul-bright-button-text font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Mehr erfahren</button>
     </div>
   </div>
 

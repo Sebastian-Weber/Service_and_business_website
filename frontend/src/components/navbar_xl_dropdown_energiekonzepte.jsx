@@ -42,7 +42,7 @@ const Navbar_XL_dropdown_items = [
   ];
 
 // Props "Name" nicht löschen
-function Navbar_xl_dropdown_energiekonzepte({ name }) {
+function Navbar_xl_dropdown_energiekonzepte({ caption }) {
   return (
     <>
 
@@ -52,7 +52,7 @@ function Navbar_xl_dropdown_energiekonzepte({ name }) {
         <div className="relative flex flex-row items-center justify-between nav-bg-color">
             <Link to="/Themenseite1">
                 <div className="font-fredoka text-xl font-medium menu-hover nav-text-color">
-                    {name}
+                    {caption}
                 </div>
             </Link>
             <div className="px-2">

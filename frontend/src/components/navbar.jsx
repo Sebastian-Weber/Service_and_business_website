@@ -18,6 +18,8 @@ import Phone from '/src/assets/Phone.svg'
 // import Navbar_xl_dropdown_template from './navbar_xl_dropdown_template.jsx';
 import Navbar_xl_dropdown_leistungen from './navbar_xl_dropdown_leistungen.jsx';
 import Navbar_xl_dropdown_energiekonzepte from './navbar_xl_dropdown_energiekonzepte.jsx';
+import Button_primary from './buttons/button_primary.jsx';
+
 
 
 
@@ -47,6 +49,7 @@ function Navbar() {
   const toggleEnergiekonzepteExpander = () => {
     setEnergiekonzepteExpanderVisible(!isEnergiekonzepteExpanderVisible);
   };
+
 
   return (
     <>
@@ -363,8 +366,8 @@ function Navbar() {
                 {/* <Navbar_xl_dropdown_indoor></Navbar_xl_dropdown_indoor>
                 <Navbar_xl_dropdown_outdoor></Navbar_xl_dropdown_outdoor>
                 <Navbar_xl_dropdown_template></Navbar_xl_dropdown_template> */}
-                <Navbar_xl_dropdown_leistungen name="Leistungen"/>
-                <Navbar_xl_dropdown_energiekonzepte name="Energiekonzepte"/>
+                <Navbar_xl_dropdown_leistungen caption="Leistungen"/>
+                <Navbar_xl_dropdown_energiekonzepte caption="Energiekonzepte"/>
                 {/* <Navbar_xl_dropdown_template name="Navbar_xl_dropdown_template"/> */}
 
 
@@ -381,7 +384,11 @@ function Navbar() {
               <img className="" src={Phone}></img>
               <span className="text-xl mr-4 nav-text-color">+49 12345 6789</span>
             </div>
-            <button className="bg-paul-light-beige font-semibold text-sm px-4 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-150">Kontakt</button>
+            {/* <button className="custom-button-primary">Kontakt</button> */}
+            <Button_primary caption="Kontakt"/>
+
+    
+
           </div>
 
         </div> 

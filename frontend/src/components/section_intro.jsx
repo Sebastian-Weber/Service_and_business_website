@@ -2,6 +2,8 @@
 // --- Text resources ---
 
 // --- Image resources ---
+import Button_primary from './buttons/button_primary';
+import Button_secondary from './buttons/button_secondary';
 import Placeholder from '/src/assets/images/Placeholder.png'
 import Image1 from '/src/assets/images/original/Desk.jpg'
 
@@ -24,9 +26,9 @@ function Section_intro() {
           {/* left box */}
           <div className="flex flex-col w-full mr-2 md:w-3/6 h-auto">
             <div className="flex flex-col w-fit">
-              <h2 className="z-20 text-4xl font-medium font-fredoka tracking-tighter underline-offset-8 decoration-8 decoration-paul-light-purple">
-                Paul & Team – Handwerk mit Herz</h2>
-                <div className="z-10 -mt-4 w-auto h-5 -mx-2 rounded-2xl bg-paul-light-purple"></div>
+              <span className="text-4xl font-medium font-fredoka tracking-tighter underline underline-offset-8 decoration-8 decoration-paul-light-purple">
+                Paul & Team – Handwerk mit Herz</span>
+                {/* <div className="z-10 -mt-4 w-auto h-5 -mx-2 rounded-2xl bg-paul-light-purple"></div> */}
               </div> 
             <br></br>
             <div>
@@ -43,7 +45,10 @@ function Section_intro() {
               </p>
               <br></br>
 
-              <button className="button hover:shadow-xl hover:shadow-stone-300 px-2">Mehr über uns erfahren</button>
+              {/* <button className="button hover:shadow-xl hover:shadow-stone-300 px-2"></button> */}
+              <Button_secondary caption="Mehr über uns erfahren"/>
+  
+
             </div>
           </div>
           <br></br>

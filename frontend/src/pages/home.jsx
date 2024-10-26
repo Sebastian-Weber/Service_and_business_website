@@ -46,7 +46,7 @@ const texts = {
 function Home() {
   return (
     <>
-    <div className="flex-flex-col  bg-paul-light-rose">Home
+    <div className="flex-flex-col bg-paul-light-rose">Home
         <Section_hero></Section_hero>
         <Section_intro></Section_intro>
         {/* <Section_cards /> */}
